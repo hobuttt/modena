@@ -1,2 +1,48 @@
-body {
+@top-btn: #f50c0c;
+@nav-hover-text: cbcac9;
+
+.navbar-main {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav-logo {
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  sup {
+    font-size: 50%;
+    vertical-align: top;
+    line-height: 3;
+  }
+}
+
+.nav-header-button {
+  color: @top-btn;
+  position: relative;
+  &:before {
+    content: "";
+    width: 24px;
+    height: 1px;
+    border-bottom: 1px solid @top-btn;
+    position: absolute;
+    top: 18px;
+    bottom: 0;
+    left: -25px;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      border-color: #fff;
+    }
+  }
+}
+.main-nav-links {
+  .nav-item {
+
+  }
+  .nav-link {
+    color: @nav-hover-text;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
