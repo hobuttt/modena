@@ -3,6 +3,12 @@
 
 .navbar-main {
   background-color: rgba(0, 0, 0, 0.3);
+  .main-nav-tel {
+    color: #fff;
+    &:hover {
+      color: @nav-hover-text;
+    }
+  }
 }
 .nav-logo {
   padding-left: 10px;
@@ -40,11 +46,28 @@
 
   }
   .nav-link {
-    color: @nav-hover-text;
+    font-size: 14px;
     &:hover {
-      color: #fff;
+      color: #fff !important;
     }
   }
+}
+.main-nav-categories {
+  width: 100%;
+  .nav-link {
+    color: #fff !important;
+  }
+  &__link {
+    padding: .5rem 1rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    display: block;
+    color: #fff;
+    &:hover {
+      color: @nav-hover-text;
+    }
+  }
+
 }
 
 
@@ -58,7 +81,7 @@
   background-size: cover;
   min-height: 300px;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
   &:before {
     background-color: #1C2125;
