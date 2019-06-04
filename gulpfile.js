@@ -5,6 +5,7 @@ const
   minifyCSS = require('gulp-clean-css'),
   autoprefixer = require('gulp-autoprefixer'),
   babel = require('gulp-babel'),
+  order = require('gulp-order'),
   sourcemaps = require('gulp-sourcemaps'),
   concat = require('gulp-concat'),
   minify = require('gulp-minify');
@@ -18,9 +19,15 @@ gulp.task('browserSync', function(){
 });
 
 gulp.task('less', function () {
-  return  gulp.src('src/less/*.less')
+  return  gulp.src('src/less/**/*.less')
   .pipe(less())
   .pipe(autoprefixer())
+  // .pipe(order([
+  //   'src/less/style.less',
+  //   'src/less/footer.less',
+  //   'src/less/main/*.less'
+  // ]))
+  .pipe(concat('style.css'))
   .pipe(minifyCSS({compatibility: 'ie8'}))
   .pipe(gulp.dest('css'))
   .pipe(browserSync.reload({
@@ -41,7 +48,7 @@ gulp.task('babel', () =>
 );
 
 gulp.task('watch', ['browserSync', 'less', 'babel'], function(){
-  gulp.watch('src/less/*.less', ['less']);
+  gulp.watch('src/less/**/*.less', ['less']);
   gulp.watch('**/*.html', browserSync.reload);
   gulp.watch('src/js/**/*.js', ['babel'], browserSync.reload);
 });
