@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/gerbera/Gerbera.eot');
+    src: local('☞Gerbera'), local('Gerbera'),
+    url('../fonts/gerbera/Gerbera.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gerbera/Gerbera.woff2') format('woff2'),
+    url('../fonts/gerbera/Gerbera.woff') format('woff'),
+    url('../fonts/gerbera/Gerbera.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/gerbera/Gerbera-Light.eot');
+    src: local('☞Gerbera Light'), local('Gerbera-Light'),
+    url('../fonts/gerbera/Gerbera-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gerbera/Gerbera-Light.woff2') format('woff2'),
+    url('../fonts/gerbera/Gerbera-Light.woff') format('woff'),
+    url('../fonts/gerbera/Gerbera-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/gerbera/Gerbera-Black.eot');
+    src: local('☞Gerbera Black'), local('Gerbera-Black'),
+    url('../fonts/gerbera/Gerbera-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gerbera/Gerbera-Black.woff2') format('woff2'),
+    url('../fonts/gerbera/Gerbera-Black.woff') format('woff'),
+    url('../fonts/gerbera/Gerbera-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/gerbera/Gerbera-Bold.eot');
+    src: local('☞Gerbera Bold'), local('Gerbera-Bold'),
+    url('../fonts/gerbera/Gerbera-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gerbera/Gerbera-Bold.woff2') format('woff2'),
+    url('../fonts/gerbera/Gerbera-Bold.woff') format('woff'),
+    url('../fonts/gerbera/Gerbera-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gerbera';
+    src: url('../fonts/gerbera/Gerbera-Medium.eot');
+    src: local('☞Gerbera Medium'), local('Gerbera-Medium'),
+    url('../fonts/gerbera/Gerbera-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gerbera/Gerbera-Medium.woff2') format('woff2'),
+    url('../fonts/gerbera/Gerbera-Medium.woff') format('woff'),
+    url('../fonts/gerbera/Gerbera-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tenor-Sans';
+    src: url('../fonts/Tenor_Sans/TenorSans-Regular.ttf');
+    src: local('☞Tenor Sans'), local('Tenor Sans'),
+    url('../fonts/Tenor_Sans/TenorSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
