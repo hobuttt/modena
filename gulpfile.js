@@ -5,7 +5,7 @@ const
   minifyCSS = require('gulp-clean-css'),
   autoprefixer = require('gulp-autoprefixer'),
   babel = require('gulp-babel'),
-  order = require('gulp-order'),
+  // order = require('gulp-order'),
   sourcemaps = require('gulp-sourcemaps'),
   concat = require('gulp-concat'),
   minify = require('gulp-minify');
