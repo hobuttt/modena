@@ -1,12 +1,46 @@
 @import "mixins/mixins";
 
 body {
-  color: @base-text-white;
+  font-family: @font-gerbera;
+}
+h1, h2, h3, h4, h5 {
+  font-family: @font-tenor;
 }
 .btn-base {
   width: 192px;
   height: 60px;
   background-color: transparent;
   text-transform: uppercase;
+  &:before {
+    content: "";
+    height: 3px;
+    width: 176px;
+    border-top: 0;
+    position: absolute;
+    bottom: -3px;
+    left: 8px;
+  }
 }
 
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  &:before {
+    background-color: #1C2125;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  &:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
