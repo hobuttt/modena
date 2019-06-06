@@ -16,15 +16,19 @@
 <div class="container-fluid">
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-main row flex-wrap">
     <div class="col-12">
-      <div class=" navbar-collapse justify-content-between row">
+      <div class="justify-content-between row">
         <div class="col-0 col-sm-4 ">
-          <ul class=" mt-2 mt-lg-0 collapsar nav-collapse main-nav-links">
+          <ul class=" mt-2 mt-lg-0 nav-collapse nav_collapse_pages main-nav-links">
 
-            <li class="nav-item-top ">
+            <li class="nav-item-top d-flex">
+              <div class="back-arrow ">
+                <a href="#" id="back-arrow"><img src="images/little-red-arrow.svg" alt="" class="mr-2">Назад</a>
+              </div>
               <button type="button" class="close-nav" id="close-nav">
                 <span aria-hidden="true" class="cross"></span>
               </button>
-            </li><li class="nav-item d-block d-lg-none">
+            </li>
+            <li class="nav-item d-block d-lg-none">
               <a class="nav-link d-flex justify-content-between" href="#" id="nav-catalog-link" aria-haspopup="true" aria-expanded="false">
                 <span>Каталог товаров </span><span class="chevron"></span>
               </a>
@@ -56,9 +60,11 @@
         </div>
       </div>
     </div>
+    <div class="col-12 nav-divider-box"> <div class="dropdown-divider nav-divider "></div></div>
+
     <div class="col-12">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-12 col-lg-3 mt-3 d-flex justify-content-between">
           <a class="navbar-brand nav-logo" href="#">
             <img class="nav-logo__img" src="images/main/logo.png" alt="">
             <span class="nav-logo__text">Modena <sup>ceramics</sup></span>
@@ -67,14 +73,13 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div class="col-sm-9">
-          <div class="collapse navbar-collapse ">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex justify-content-between main-nav-categories">
-              <li class="nav-item d-block d-lg-none">
-                <a class="nav-link " href="#" id="" aria-haspopup="true" aria-expanded="false">
-                  Каталог товаров
-                </a>
-              </li>
+        <div class="col navnavnav">
+            <ul class="nav-collapse nav_collapse_categ mt-2   main-nav-categories">
+<!--              <li class="nav-item-top ">-->
+<!--                <button type="button" class="close-nav" id="close-nav-categ">-->
+<!--                  <span aria-hidden="true" class="cross"></span>-->
+<!--                </button>-->
+<!--              </li>-->
               <li class="nav-item active">
                 <a class="main-nav-categories__link" href="#">Плитка</a>
               </li>
@@ -97,7 +102,6 @@
                 <a class="main-nav-categories__link" href="#">Тротуарная плитка</a>
               </li>
             </ul>
-          </div>
         </div>
       </div>
     </div>

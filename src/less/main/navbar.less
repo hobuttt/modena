@@ -31,16 +31,13 @@
 }
 .nav-collapse {
   width: 90vw;
-  height: 100vh;
   background-color: @bg-white;
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  position: absolute;
   z-index: 3;
-  left: -90vw;
   top: -16px;
   transition: left .5s;
   @media screen and (min-width: 992px) {
@@ -49,15 +46,55 @@
     width: 100%;
     background: transparent;
     z-index: 0;
+    left: 0;
+  }
+}
+.nav_collapse_pages {
+  left: -90vw;
+  height: 100vh;
+  position: absolute;
+  @media screen and (min-width: 992px) {
+    left: 0;
+  }
+}
+
+.nav_collapse_categ {
+  height: 100vh;
+  margin-bottom: 0;
+  padding-left: 0;
+  position: absolute;
+  left: -90vh;
+  top: -24px;
+  z-index: 4;
+  @media screen and (min-width: 411px) {
+    top: -8px;
+  }
+  .nav-item {
+    border-top: 1px solid  @text-grey;
+    padding: 10px 0;
+    &:last-child {
+      border-bottom: 1px solid @text-grey;
+    }
+    @media screen and (min-width: 992px) {
+      border: 0;
+      top: 0;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    position: static;
+    height: auto;
+    align-items: center;
+    display: flex;
+    z-index: 0;
+    justify-content: space-between;
   }
 }
 .shower {
   left: -1px;
   transition: left .5s;
-}
-.collapsar {
-  @media screen and (min-width: 992px) {
-  }
 }
 .nav-item-top {
   height: 80px;
@@ -106,6 +143,7 @@
     }
     @media screen and (min-width: 992px) {
       border: 0;
+
       &:last-child {
         border-bottom: 0;
       }
@@ -130,18 +168,37 @@
   }
 }
 .main-nav-categories {
-  width: 100%;
   &__link {
-    padding: .5rem 1rem;
+
     padding-right: .5rem;
     padding-left: .5rem;
     display: block;
-    color: @base-text-white;
-    text-transform: uppercase;
+    color: @black;
+    font-family: @font-tenor;
+    font-size: 16px;
+
     &:hover {
       color: @text-black-lite;
       text-decoration: none;
     }
+    @media screen and (min-width: 992px) {
+      font-size: 14px;
+      color: @base-text-white;
+      text-transform: uppercase;
+      font-family: @font-gerbera;
+      &:hover {
+        color: @text-black-lite !important;
+      }
+    }
   }
 }
-
+.nav-divider-box {
+  position: relative;
+}
+.nav-divider {
+  border-top: 1px solid @base-text-white;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  opacity: .5;
+}

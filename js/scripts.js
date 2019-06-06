@@ -45,10 +45,20 @@ $(document).ready(function () {
     }
   });
   $('#hamburger').on('click', function () {
-    $('.nav-collapse').toggleClass('shower');
+    $('.nav_collapse_pages').toggleClass('shower');
   });
   $('#close-nav').on('click', function () {
-    $('.nav-collapse').toggleClass('shower');
+    $('.nav_collapse_pages').toggleClass('shower');
+    $('.nav_collapse_categ').removeClass('shower');
+    $('.back-arrow').removeClass('d-block');
+  });
+  $('#nav-catalog-link').on('click', function () {
+    $('.nav_collapse_categ').toggleClass('shower');
+    $('.back-arrow').toggleClass('d-block');
+  });
+  $('#back-arrow').on('click', function () {
+    $('.nav_collapse_categ').toggleClass('shower');
+    $('.back-arrow').removeClass('d-block');
   });
 });
 //# sourceMappingURL=scripts.js.map
