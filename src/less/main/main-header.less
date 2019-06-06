@@ -26,17 +26,22 @@ header  {
 .main-header {
   display: flex;
   align-items: center;
+
   &__title {
+    margin-top: 15%;
     font-family: Tenor-Sans;
     font-size: 2.5rem;
     color: @base-text-white;
     @media screen and (min-width: 767px) {
-      font-size: 4rem;
+      font-size: 4.7rem;
+      margin-top: -15%;
+
     }
   }
   &__subtitle {
     font-family: Gerbera;
     font-size: 16px;
+    padding: 0 40px;
     color: @base-text-white;
     padding-top: 30px;
   }
@@ -44,6 +49,7 @@ header  {
     color: @base-text-white;
     margin-top: 70px;
     position: relative;
+    border: 1px solid @base-text-white;
     &:before {
       border:1px solid #cbcac9;
     }
@@ -57,12 +63,11 @@ header  {
   }
 }
 .main-scroll-mouse {
-  width: 80px;
-  height: 65px;
   position: absolute;
   bottom: 18%;
   left: 0;
   right: 0;
+  width: 80px;
   overflow: auto;
   margin: auto;
   text-align: center;
@@ -71,9 +76,23 @@ header  {
     color: #fff;
   }
   &__ellipse {
+    position: relative;
+    height: 30px;
+    margin: auto;
+    width: 20px;
+    border-radius: 10px;
+    border: 1px solid @base-text-white;
+    &:before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: @red;
+      position: absolute;
+      left: 7px;
+      top: 6px;
+    }
 
   }
-  &__point {
 
-  }
 }

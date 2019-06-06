@@ -1,5 +1,7 @@
-$(document).ready(function(){
-  $('.brand-slider').slick({
+$(document).ready(function() {
+
+  /*Слайдер брендов*/
+	$('.brand-slider').slick({
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -36,4 +38,15 @@ $(document).ready(function(){
       }
     ]
   });
+
+	/*Разлокировка кнопки в модалке*/
+	$('#modal-form').on('change', () => {
+		if ($('#modal-privacy').is(':checked')) {
+			$('#modal-btn').attr('disabled', false);
+		} else {
+			$('#modal-btn').attr('disabled', 'true');
+		}
+	})
+
 });
+
