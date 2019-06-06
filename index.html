@@ -12,12 +12,13 @@
   <link rel="stylesheet" href="css/fonts.css">
   <title>Modena</title>
 </head>
+
 <body>
 <div class="container-fluid">
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-main row flex-wrap">
     <div class="col-12">
       <div class=" navbar-collapse justify-content-between row">
-        <div class="col-6 col-sm-4">
+        <div class="col-0 col-sm-4 ">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0 collapse navbar-collapse main-nav-links">
             <li class="nav-item dropdown d-block d-sm-none">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,9 +60,9 @@
     <div class="col-12">
       <div class="row ">
         <div class="col-sm-3">
-          <a class="navbar-brand" href="#">
-            <img src="images/main/logo.png" alt="">
-            <span class="nav-logo">Modena <sup>ceramics</sup></span>
+          <a class="navbar-brand nav-logo" href="#">
+            <img class="nav-logo__img" src="images/main/logo.png" alt="">
+            <span class="nav-logo__text">Modena <sup>ceramics</sup></span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -80,7 +81,7 @@
                 <a class="nav-link" href="#">Обои</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#">Искусственный камень</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Ламинат</a>
@@ -89,7 +90,7 @@
                 <a class="nav-link" href="#">Камины</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#">Тротуарная плитка</a>
               </li>
             </ul>
           </div>
@@ -112,7 +113,7 @@
         <div class="col-sm-2 d-none d-lg-block">
           <p class="main-header__subtitle">Составим чертеж с условными обозначениями и комментариями специалиста по расчету материалов. Ни одной лишней плитки!</p>
         </div>
-        <div class="main-scroll-mouse">
+        <div class="main-scroll-mouse d-none d-lg-block">
           <p class="main-scroll-mouse__text">скрольте вниз</p>
           <div class="main-scroll-mouse__point"><span class="main-scroll-mouse__ellipse"></span></div>
         </div>
@@ -137,7 +138,7 @@
             <a href="#" class="cover-categories__link">
             <div class="cover-categories__box">
                 <img class="cover-categories__img" src="images/main/main-categories/cat2.jpg" alt="">
-                <span class="cover-categories__title">Плитка</span>
+                <span class="cover-categories__title">Камень</span>
             </div>
             </a>
           </div>
@@ -173,14 +174,14 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
               <div class="tab-pane fade show active" id="pills-tile" role="tabpanel" aria-labelledby="tile-tab">
-                <div class="row">
+                <div class="row px-3">
                   <div class="col-md-3 col-sm-6 col-12  main-good">
                     <a href="#" class="main-good__link">
                       <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Vitra</p>
                         <p>Portofina Cerama</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -190,7 +191,7 @@
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Grassaro</p>
                         <p>Orient</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -200,7 +201,7 @@
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Vitra</p>
                         <p>Portofina Cerama</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -210,7 +211,7 @@
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Grassaro</p>
                         <p>Orient</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -220,7 +221,7 @@
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Vitra</p>
                         <p>Portofina Cerama</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -230,7 +231,7 @@
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Grassaro</p>
                         <p>Orient</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -240,7 +241,7 @@
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Vitra</p>
                         <p>Portofina Cerama</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -250,7 +251,7 @@
                       <div class="main-good__disc">
                         <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Grassaro</p>
                         <p>Orient</p>
-                        <p>от 990 руб./м<sup>2</sup></p>
+                        <p class="good-cost">от 990 руб./м<sup>2</sup></p>
                       </div>
                     </a>
                   </div>
@@ -307,27 +308,35 @@
           </div>
           <div class="col-10 offset-1">
             <div class="about-prev-arrow"></div>
-            <div class="brand-slider">
+            <div class="brand-slider px-3 px-md-0">
               <div class="brand-slider-block">
                 <img class="brand-slider-block__img" src="images/brands/vitra.svg" alt="">
-                <p>Товаров 55</p>
+                <p class="brand-slider-block__goods">Товаров 55</p>
               </div>
               <div class="brand-slider-block">
                 <img class="brand-slider-block__img" src="images/brands/grasaro.svg" alt="">
-                <p>Товаров 55</p>
+                <p class="brand-slider-block__goods">Товаров 55</p>
               </div>
               <div class="brand-slider-block">
                 <img class="brand-slider-block__img" src="images/brands/vitra.svg" alt="">
-                <p>Товаров 55</p>
+                <p class="brand-slider-block__goods">Товаров 55</p>
               </div>
               <div class="brand-slider-block">
                 <img class="brand-slider-block__img" src="images/brands/grasaro.svg" alt="">
-                <p>Товаров 55</p>
+                <p class="brand-slider-block__goods">Товаров 55</p>
               </div>
-              <div>your content</div>
-              <div>your content</div>
-              <div>your content</div>
-              <div>your content</div>
+							<div class="brand-slider-block">
+								<img class="brand-slider-block__img" src="images/brands/vitra.svg" alt="">
+								<p class="brand-slider-block__goods">Товаров 55</p>
+							</div>
+							<div class="brand-slider-block">
+								<img class="brand-slider-block__img" src="images/brands/grasaro.svg" alt="">
+								<p class="brand-slider-block__goods">Товаров 55</p>
+							</div>
+							<div class="brand-slider-block">
+								<img class="brand-slider-block__img" src="images/brands/vitra.svg" alt="">
+								<p class="brand-slider-block__goods">Товаров 55</p>
+							</div>
             </div>
             <div class="about-next-arrow"></div>
           </div>
@@ -384,7 +393,6 @@
         </div>
         </div>
 
-
         <div class="col-12 mt-5">
           <h4>Заголовок SEO-текста для поисковых роботов и продвижения</h4>
           <p>Гидродинамический удар выталкивает торсионный пульсар в полном соответствии с законом сохранения энергии. Очевидно, что химическое соединение возбуждает тахионный объект, при этом дефект массы не образуется. Тело трансформирует плоскополяризованный взрыв только в отсутствие тепло- и массообмена с окружающей средой. Лептон отклоняет фотон. Экситон переворачивает разрыв. Химическое соединение зеркально отталкивает квант.
@@ -399,11 +407,69 @@
   <footer>
     <div class="bg-cover footer-bg"></div>
     <div class="container-fluid">
-      <div class="row">
-        hhjmgbvjhkbhvjg jg kj j
+      <div class="row pt-5">
+				<div class="col-12 col-md-2 mb-4 mb-md-0">
+					<ul class=" footer-menu">
+						<li class="footer-menu__item"><a href="#">Оплата и доставка</a></li>
+						<li class="footer-menu__item"><a href="#">Оплата и доставка</a></li>
+						<li class="footer-menu__item"><a href="#">О компании</a></li>
+						<li class="footer-menu__item"><a href="#">Производители</a></li>
+						<li class="footer-menu__item"><a href="#">События</a></li>
+						<li class="footer-menu__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-4 ">
+					<div class="d-flex justify-content-md-around">
+						<ul class="footer-catalog-menu">
+							<li class="footer-catalog-menu__title"><span>Каталог товаров</span></li>
+							<li class="footer-catalog-menu__item"><a href="">Плитка</a></li>
+							<li class="footer-catalog-menu__item"><a href="">Сантехника</a></li>
+							<li class="footer-catalog-menu__item"><a href="">Ламинат</a></li>
+							<li class="footer-catalog-menu__item"><a href="">Обои</a></li>
+							<li class="footer-catalog-menu__item"><a href="">Камины</a></li>
+						</ul>
+						<ul class="footer-catalog-menu pt-4">
+							<li class="footer-catalog-menu__item"><a href="">Искусственный камень</a></li>
+							<li class="footer-catalog-menu__item"><a href="">Тротуарная плитка</a></li>
+							<li class="footer-catalog-menu__item"><a href="">Керамический кирпич</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="col-12 col-md-6 text-md-right">
+					<a class="footer-tel" href="tel:78614880000">8 (861) 488 00 00</a>
+					<button type="button" class="btn nav-header-button pl-0 pl-md-2" data-toggle="modal" data-target="#exampleModalCenter">
+						Заказать звонок
+					</button>
+				</div>
       </div>
+			<div class="row">
+				<div class="col-12"> <div class="dropdown-divider footer-divider my-4"></div></div>
+			</div>
+			<div class="row pb-2">
+				<div class="col-12 col-md-3 footer-copy mt-1">
+					<p>&copy; Модена, 2019. Все права защищены. По всем вопросам обращайтесь modena@gmail.com</p>
+				</div>
+				<div class="col-12 col-md-3">
+					<a href="#" class="footer-polisy"> Политика конфиденциальности</a>
+				</div>
+				<div class="col-12 offset-md-4 col-md-2 justify-content-end">
+					<div class=" footer-very-good justify-content-center">
+						<a href="" class="d-flex justify-md-content-center footer-very-good-link">
+							<img src="images/very-good.svg" alt="">
+							<div class="d-flex flex-column pl-1 mt-2 mt-md-0" >
+								<span class="footer-very-good__create">Создание сайта</span><span class="footer-very-good__name">Very Good</span>
+							</div>
+						</a>
+
+					</div>
+				</div>
+			</div>
     </div>
   </footer>
+
+
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -414,7 +480,7 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+         serfe
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
