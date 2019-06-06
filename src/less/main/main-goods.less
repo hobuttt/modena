@@ -2,8 +2,17 @@
 
 /*cover-categories*/
 
+.main-cover-box {
+  position: relative;
+}
 .cover-categories {
-    margin-top: -100px;
+  margin-top: -12%;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  &__box {
+  }
+
   &__link{
     width: 100%;
     height: 100%;
@@ -12,7 +21,6 @@
     &:hover {
 
       .cover-categories{
-
         &__title {
           color: @red;
           transition: all .3s;
@@ -77,6 +85,7 @@
 
 }
 .main-goods {
+  padding-top: 15%;
   &__pills-link {
     color: @black;
   }
@@ -95,12 +104,25 @@
     }
   }
 }
+#main-goods {
+  position: relative;
+}
  .main-goods-bg {
-   height: 200%;
+
+   left:0;
+   right:0;
+   top:0;
+   bottom:0;
+   background-color: @beige;
    &:before {
-     opacity: .5;
+     background-image: url('../images/main/map.svg');
+     background-position:  bottom right;
+     background-repeat: no-repeat;
+     background-size: 85%;
    }
    &:after{
+     background-image: url('../images/main/main-goods/main-goods-grid.png');
+     background-size: cover;
    }
    &__title {
      color: @black;
@@ -122,5 +144,21 @@
   &__disc {
     padding: 10px;
     color: @black;
+  }
+}
+.main-goods-btn {
+  color: @black;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  &:before {
+    border:1px solid #cbcac9;
+  }
+  &:hover {
+    background-color: #fff;
+    &:before {
+      background-color: #cbcac9;
+    }
   }
 }

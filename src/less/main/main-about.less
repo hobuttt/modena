@@ -1,0 +1,66 @@
+@import "../mixins/mixins";
+
+.main-about {
+    &__title {
+      font-size: 2.5rem;
+   }
+}
+.main-about-btn {
+  color: @red;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  position: relative;
+  border:1px solid @red;
+  &:before {
+    border:1px solid @red;
+    color: @base-text-white;
+  }
+  &:hover {
+    background-color: @red;
+    color: #fff;
+    &:before {
+      background-color: #cbcac9;
+    }
+  }
+}
+.brand-slider {
+  overflow: hidden;
+  position: relative;
+}
+.about-next-arrow, .about-prev-arrow {
+  cursor: pointer;
+  background-image: url(../images/sider-arrow.svg);
+  height: 55px;
+  background-repeat: no-repeat;
+  width: 120px;
+  background-position: center center;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.about-prev-arrow {
+  left: -70px;
+  &:hover {
+    background-image: url(../images/hover-arrow.svg);
+    transform: rotate(180deg);
+
+  }
+}
+.about-next-arrow {
+  transform: rotate(180deg);
+  right: -70px;
+  &:hover {
+    background-image: url(../images/hover-arrow.svg);
+    transform: rotate(360deg);
+
+  }
+}
+
+.brand-slider-block {
+  &__img {
+    margin: 0 auto;
+  }
+}
