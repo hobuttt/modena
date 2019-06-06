@@ -1,6 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
+  /*Слайдер брендов*/
   $('.brand-slider').slick({
     speed: 300,
     slidesToShow: 5,
@@ -33,6 +34,15 @@ $(document).ready(function () {
         dots: false
       }
     }]
+  });
+  /*Разлокировка кнопки в модалке*/
+
+  $('#modal-form').on('change', function () {
+    if ($('#modal-privacy').is(':checked')) {
+      $('#modal-btn').attr('disabled', false);
+    } else {
+      $('#modal-btn').attr('disabled', 'true');
+    }
   });
 });
 //# sourceMappingURL=scripts.js.map
