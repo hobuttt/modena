@@ -141,30 +141,30 @@ h1, h2, h3, h4, h5 {
     top: 0;
     right: 5px;
   }
-  .cross {
+}
+.cross {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  width: 22px;
+  height: 32px;
+  opacity: 0.5;
+  &:hover {
+    opacity: 0.9;
+  }
+  &:before, &:after {
     position: absolute;
-    right: 12px;
-    top: 10px;
-    width: 22px;
-    height: 32px;
-    opacity: 0.6;
-    &:hover {
-      opacity: 0.9;
-    }
-    &:before, &:after {
-      position: absolute;
-      left: 15px;
-      content: ' ';
-      height: 30px;
-      width: 2px;
-      background-color: #222;
-    }
-    &:before {
-      transform: rotate(45deg);
-    }
-    &:after {
-      transform: rotate(-45deg);
-    }
+    left: 15px;
+    content: ' ';
+    height: 30px;
+    width: 2px;
+    background-color: #222;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
   }
 }
 
@@ -184,4 +184,20 @@ h1, h2, h3, h4, h5 {
 
 .modal-privacy-label {
   color: lighten(@text-black-lite, 15%);
+}
+
+
+.chevron::before {
+  border-style: solid ;
+  border-width: 0.15em 0.15em 0 0;
+  border-color: @red;
+  content: '';
+  display: inline-block;
+  height: 0.8em;
+  right: 0;
+  position: relative;
+  top: 0.25em;
+  transform: rotate(45deg);
+  vertical-align: top;
+  width: 0.8em;
 }

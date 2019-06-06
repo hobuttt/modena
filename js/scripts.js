@@ -44,5 +44,11 @@ $(document).ready(function () {
       $('#modal-btn').attr('disabled', 'true');
     }
   });
+  $('#hamburger').on('click', function () {
+    $('.nav-collapse').toggleClass('shower');
+  });
+  $('#close-nav').on('click', function () {
+    $('.nav-collapse').toggleClass('shower');
+  });
 });
 //# sourceMappingURL=scripts.js.map
