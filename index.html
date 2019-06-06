@@ -18,18 +18,18 @@
     <div class="col-12">
       <div class=" navbar-collapse justify-content-between row">
         <div class="col-0 col-sm-4 ">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 collapse navbar-collapse main-nav-links">
-            <li class="nav-item dropdown d-block d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Каталог товаров
+          <ul class=" mt-2 mt-lg-0 collapsar nav-collapse main-nav-links">
+
+            <li class="nav-item-top ">
+              <button type="button" class="close-nav" id="close-nav">
+                <span aria-hidden="true" class="cross"></span>
+              </button>
+            </li><li class="nav-item d-block d-lg-none">
+              <a class="nav-link d-flex justify-content-between" href="#" id="nav-catalog-link" aria-haspopup="true" aria-expanded="false">
+                <span>Каталог товаров </span><span class="chevron"></span>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
             </li>
-            <li class="nav-item d-block d-sm-none">
+            <li class="nav-item d-block d-lg-none">
               <a class="nav-link" href="#">Оплата и доставка</a>
             </li>
             <li class="nav-item ">
@@ -57,19 +57,24 @@
       </div>
     </div>
     <div class="col-12">
-      <div class="row ">
+      <div class="row">
         <div class="col-sm-3">
           <a class="navbar-brand nav-logo" href="#">
             <img class="nav-logo__img" src="images/main/logo.png" alt="">
             <span class="nav-logo__text">Modena <sup>ceramics</sup></span>
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" id="hamburger" >
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
         <div class="col-sm-9">
-          <div class="collapse  ">
+          <div class="collapse navbar-collapse ">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex justify-content-between main-nav-categories">
+              <li class="nav-item d-block d-lg-none">
+                <a class="nav-link " href="#" id="" aria-haspopup="true" aria-expanded="false">
+                  Каталог товаров
+                </a>
+              </li>
               <li class="nav-item active">
                 <a class="main-nav-categories__link" href="#">Плитка</a>
               </li>

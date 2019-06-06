@@ -23,13 +23,53 @@
       vertical-align: top;
       line-height: 3;
     }
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 992px) {
       font-size: 24px;
     }
   }
 
 }
-
+.nav-collapse {
+  width: 90vw;
+  height: 100vh;
+  background-color: @bg-white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  position: absolute;
+  z-index: 3;
+  left: -90vw;
+  top: -16px;
+  transition: left .5s;
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    background: transparent;
+    z-index: 0;
+  }
+}
+.shower {
+  left: -1px;
+  transition: left .5s;
+}
+.collapsar {
+  @media screen and (min-width: 992px) {
+  }
+}
+.nav-item-top {
+  height: 80px;
+}
+.close-nav {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
 .nav-header-button {
   color: @top-btn;
   position: relative;
@@ -51,7 +91,7 @@
       border-color: @base-text-white;
     }
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 992px) {
     font-size: 1rem;
     &:before {
       display: block;
@@ -60,13 +100,33 @@
 }
 .main-nav-links {
   .nav-item {
-
+    border-top: 1px solid  @text-grey;
+    &:last-child {
+      border-bottom: 1px solid @text-grey;
+    }
+    @media screen and (min-width: 992px) {
+      border: 0;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
   }
   .nav-link {
-    font-size: 14px;
+    font-size: 16px;
+    color: @black;
+    font-family: @font-tenor;
     &:hover {
-      color: @base-text-white !important;
+      color: @text-black-lite !important;
     }
+    @media screen and (min-width: 992px) {
+      font-size: 14px;
+      color: @text-black-lite;
+      font-family: @font-gerbera;
+      &:hover {
+        color: @base-text-white !important;
+      }
+    }
+
   }
 }
 .main-nav-categories {

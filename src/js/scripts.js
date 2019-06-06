@@ -46,7 +46,14 @@ $(document).ready(function() {
 		} else {
 			$('#modal-btn').attr('disabled', 'true');
 		}
-	})
+	});
 
+
+  $('#hamburger').on('click', () => {
+    $('.nav-collapse').toggleClass('shower')
+  });
+  $('#close-nav').on('click', () => {
+    $('.nav-collapse').toggleClass('shower')
+  })
 });
 
