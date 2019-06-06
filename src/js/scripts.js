@@ -50,10 +50,22 @@ $(document).ready(function() {
 
 
   $('#hamburger').on('click', () => {
-    $('.nav-collapse').toggleClass('shower')
+    $('.nav_collapse_pages').toggleClass('shower')
   });
   $('#close-nav').on('click', () => {
-    $('.nav-collapse').toggleClass('shower')
-  })
+    $('.nav_collapse_pages').toggleClass('shower');
+    $('.nav_collapse_categ').removeClass('shower');
+    $('.back-arrow').removeClass('d-block')  });
+
+  $('#nav-catalog-link').on('click', () => {
+    $('.nav_collapse_categ').toggleClass('shower');
+    $('.back-arrow').toggleClass('d-block')
+  });
+
+  $('#back-arrow').on('click', () => {
+    $('.nav_collapse_categ').toggleClass('shower');
+    $('.back-arrow').removeClass('d-block')
+  });
+
 });
 
