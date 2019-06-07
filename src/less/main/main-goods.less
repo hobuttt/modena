@@ -85,7 +85,7 @@
 
 }
 .main-goods {
-  padding-top: 15%;
+  padding-top: 85%;
   &__pills-link {
     color: @black;
   }
@@ -95,14 +95,30 @@
     padding-top: .5rem;
     margin: .5rem 1rem;
   }
-  .nav-pills .nav-link {
-    border-radius: 0;
-    &.active, .nav-pills .show > .nav-link {
-      color: @red;
-      background-color: transparent;
-      border-top: 2px solid @red;
+  .nav-pills {
+    display: -webkit-box;
+    min-width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .nav-item {
+      min-width: 50px;
+    }
+    .nav-link {
+      border-radius: 0;
+      &:hover {
+        color: @red;
+      }
+      &.active, .nav-pills .show > .nav-link {
+        color: @red;
+        background-color: transparent;
+        border-top: 2px solid @red;
+      }
     }
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 15%;  }
 }
 #main-goods {
   position: relative;
