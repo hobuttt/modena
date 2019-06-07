@@ -171,7 +171,7 @@
   &__link {
 
     padding-right: .5rem;
-    padding-left: .5rem;
+    padding-left: 1rem;
     display: block;
     color: @black;
     font-family: @font-tenor;
@@ -201,4 +201,36 @@
   left: 0;
   position: absolute;
   opacity: .5;
+}
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+  width: 2.4em;
+  height: 2.6em;
+  padding: 0;
+  position: relative;
+  .navbar-toggler-icons {
+    color: @base-text-white;
+    display: block;
+    float: left;
+    clear: both;
+    height: 4px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    position: absolute;
+    right: 3px;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    &:nth-child(1){
+      margin-top: 10px;
+      z-index: 9;
+    }
+    &:nth-child(2){
+      margin-top: 25px;
+    }
+    &:nth-child(3){
+      margin-top: 40px;
+    }
+  }
 }
