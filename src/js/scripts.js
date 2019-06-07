@@ -1,8 +1,23 @@
 $(document).ready(function() {
 
+  /*Слайдер header*/
+	$('.top-bg-slider').slick({
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+		cssEase: 'linear',
+		arrows:false,
+		useTransform: true,
+		// fade: true,
+		autoplay: true,
+		autoplaySpeed: 5000
+  });
+
   /*Слайдер брендов*/
 	$('.brand-slider').slick({
-    speed: 300,
+    speed: 1000,
     slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
