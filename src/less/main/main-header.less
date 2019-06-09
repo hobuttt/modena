@@ -1,12 +1,7 @@
 @import "../mixins/mixins";
 
 /*HEADER*/
-header  {
-  min-height: 100vh;
-  @media screen and (min-width: 767px) {
-    min-height: 110vh;
-  }
-}
+
 .main-bg {
   background-image: url('../images/main/main-img.jpg');
   height: 100%;
@@ -24,6 +19,10 @@ header  {
   }
 }
 .main-header {
+  min-height: 100vh;
+  @media screen and (min-width: 767px) {
+    min-height: 110vh;
+  }
   display: flex;
   align-items: center;
   &__row {
@@ -47,10 +46,14 @@ header  {
     padding-top: 40px;
   }
   &__btn {
+
     color: @base-text-white;
     margin-top: 70px;
     position: relative;
     border: 1px solid @base-text-white;
+    @media screen and (min-width: 767px) {
+      width: @btn-width-small;
+    }
     &:before {
       border:1px solid #cbcac9;
     }

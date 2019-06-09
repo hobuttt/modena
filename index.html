@@ -14,7 +14,7 @@
 
 <body>
 <div class="container-fluid">
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-main row flex-wrap">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-main color_dark row flex-wrap">
     <div class="col-12">
       <div class="justify-content-between row">
         <div class="col-0 col-sm-4 ">
@@ -30,7 +30,7 @@
             </li>
             <li class="nav-item d-block d-lg-none">
               <a class="nav-link d-flex justify-content-between" href="#" id="nav-catalog-link" aria-haspopup="true" aria-expanded="false">
-                <span>Каталог товаров </span><span class="chevron"></span>
+                <span>Каталог товаров</span><span class="chevron"></span>
               </a>
             </li>
             <li class="nav-item d-block d-lg-none">
@@ -60,12 +60,12 @@
         </div>
       </div>
     </div>
-    <div class="col-12 nav-divider-box"> <div class="dropdown-divider nav-divider "></div></div>
+    <div class="col-12 nav-divider-box"> <div class="dropdown-divider nav-divider nav-light-divider"></div></div>
 
     <div class="col-12">
       <div class="row">
         <div class="col-12 col-lg-3 mt-3 d-flex justify-content-between">
-          <a class="navbar-brand nav-logo" href="#">
+          <a class="navbar-brand nav-logo color_white color_white_hover" href="#">
             <img class="nav-logo__img" src="images/main/logo.png" alt="">
             <span class="nav-logo__text">Modena <sup>ceramics</sup></span>
           </a>
@@ -83,7 +83,7 @@
 <!--                </button>-->
 <!--              </li>-->
               <li class="nav-item active">
-                <a class="main-nav-categories__link" href="#">Плитка</a>
+                <a class="main-nav-categories__link" href="category.html">Плитка</a>
               </li>
               <li class="nav-item">
                 <a class=" main-nav-categories__link" href="#">Сантехника</a>
@@ -170,7 +170,7 @@
           </div>
         </div>
 <!--        <div class="container-fluid ">-->
-        <div class="row main-goods">
+        <div class="row main-goods main_goods_padding">
           <div class="col-12 pt-5">
             <h2 class="main-goods__title">Красота и удобство</h2>
           </div>
@@ -495,8 +495,6 @@
     </div>
   </footer>
 
-
-
   <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content footer-modal-content p-5">
@@ -523,13 +521,18 @@
 									 <label class="modal-label"><input type="email" class="modal-input" placeholder="Ваш email"></label>
 								 </div>
 							 </div>
-							 <div class="d-flex mt-5 justify-sm-content-between flex-column">
-								 <div>
-									 <input type="checkbox" name="" id="modal-privacy">
-									 <label for="modal-privacy"><span class="modal-privacy-label pl-2">Я выражаю согласие с </span>Политикой конфиденциальности</label>
-								 </div>
-								 <button type="submit" class="btn-base modal-btn" id="modal-btn" disabled="">Отправить</button>
-							 </div>
+               <div class="d-flex mt-5 ">
+                 <div class="row">
+                   <div class="col-12 col-lg-8 d-flex">
+                     <input type="checkbox" name="" id="modal-privacy">
+                     <label for="modal-privacy"><span class="modal-privacy-label pl-2">Я выражаю согласие с </span>Политикой конфиденциальности</label>
+                   </div>
+                   <div class="col-12 col-lg-4 d-flex justify-content-lg-end justify-content-center">
+                     <button type="submit" class="btn-base modal-btn" id="modal-btn" disabled="">Отправить</button>
+
+                   </div>
+                 </div>
+               </div>
 						 </form>
 					 </div>
 
