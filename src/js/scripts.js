@@ -84,3 +84,19 @@ $(document).ready(function() {
 
 });
 
+
+/*select-filter*/
+
+const dd = document.querySelector('#select-wrapper');
+const links = document.querySelectorAll('.select-list span');
+const filterTitle = document.querySelector('.select-filter-title');
+
+dd.addEventListener('click', function() {
+  this.classList.toggle('is-actived');
+});
+
+links.forEach((element) => {
+  element.addEventListener('click', function(evt) {
+    filterTitle.innerHTML = evt.currentTarget.textContent;
+  })
+});

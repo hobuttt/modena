@@ -76,4 +76,17 @@ $(document).ready(function () {
     $('.back-arrow').removeClass('d-block');
   });
 });
+/*select-filter*/
+
+var dd = document.querySelector('#select-wrapper');
+var links = document.querySelectorAll('.select-list span');
+var filterTitle = document.querySelector('.select-filter-title');
+dd.addEventListener('click', function () {
+  this.classList.toggle('is-actived');
+});
+links.forEach(function (element) {
+  element.addEventListener('click', function (evt) {
+    filterTitle.innerHTML = evt.currentTarget.textContent;
+  });
+});
 //# sourceMappingURL=scripts.js.map

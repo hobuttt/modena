@@ -1,15 +1,6 @@
-@import "../mixins/mixins";
+@import "mixins/mixins";
 
-.navbar-main {
-  background-color: rgba(0, 0, 0, 0.3);
-  .main-nav-tel {
-    color: @base-text-white;
-    &:hover {
-      color: @text-black-lite;
-      text-decoration: none;
-    }
-  }
-}
+
 .nav-logo {
   &__img {
 
@@ -18,6 +9,7 @@
     padding-left: 10px;
     text-transform: uppercase;
     font-size: 18px;
+    font-weight: 200;
     sup {
       font-size: 50%;
       vertical-align: top;
@@ -27,7 +19,6 @@
       font-size: 24px;
     }
   }
-
 }
 .nav-collapse {
   width: 90vw;
@@ -136,74 +127,11 @@
     }
   }
 }
-.main-nav-links {
-  .nav-item {
-    border-top: 1px solid  @text-grey;
-    &:last-child {
-      border-bottom: 1px solid @text-grey;
-    }
-    @media screen and (min-width: 992px) {
-      border: 0;
 
-      &:last-child {
-        border-bottom: 0;
-      }
-    }
-  }
-  .nav-link {
-    font-size: 16px;
-    color: @black;
-    font-family: @font-tenor;
-    &:hover {
-      color: @text-black-lite !important;
-    }
-    @media screen and (min-width: 992px) {
-      font-size: 14px;
-      color: @text-black-lite;
-      font-family: @font-gerbera;
-      &:hover {
-        color: @base-text-white !important;
-      }
-    }
-
-  }
-}
-.main-nav-categories {
-  &__link {
-
-    padding-right: .5rem;
-    padding-left: 1rem;
-    display: block;
-    color: @black;
-    font-family: @font-tenor;
-    font-size: 16px;
-
-    &:hover {
-      color: @text-black-lite;
-      text-decoration: none;
-    }
-    @media screen and (min-width: 992px) {
-      font-size: 14px;
-      color: @base-text-white;
-      text-transform: uppercase;
-      font-family: @font-gerbera;
-      &:hover {
-        color: @text-black-lite !important;
-      }
-    }
-  }
-}
-.nav-divider-box {
-  position: relative;
-}
-.nav-divider {
+.nav-light-divider {
   border-top: 1px solid @base-text-white;
-  width: 100%;
-  left: 0;
-  position: absolute;
-  opacity: .5;
 }
-.navbar-dark .navbar-toggler {
+.navbar .navbar-toggler {
   border-color: transparent;
   width: 2.4em;
   height: 2.6em;
@@ -217,7 +145,7 @@
     height: 4px;
     width: 40px;
     border-radius: 40px;
-    background-color: #fff;
+    background-color: @base-text-white;
     position: absolute;
     right: 3px;
     top: 0;
@@ -225,7 +153,7 @@
     transition: all 0.4s ease;
     &:nth-child(1){
       margin-top: 10px;
-      z-index: 9;
+      z-index: 1;
     }
     &:nth-child(2){
       margin-top: 25px;
@@ -233,5 +161,10 @@
     &:nth-child(3){
       margin-top: 40px;
     }
+  }
+}
+.navbar-light .navbar-toggler {
+  .navbar-toggler-icons {
+    background-color: @text-black-lite;
   }
 }

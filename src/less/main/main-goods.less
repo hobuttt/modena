@@ -85,7 +85,6 @@
 
 }
 .main-goods {
-  padding-top: 85%;
   &__pills-link {
     color: @black;
   }
@@ -117,8 +116,12 @@
       }
     }
   }
+}
+.main_goods_padding {
+  padding-top: 85%;
   @media screen and (min-width: 768px) {
-    padding-top: 15%;  }
+    padding-top: 15%;
+  }
 }
 #main-goods {
   position: relative;
@@ -181,6 +184,9 @@
   margin: 0 auto;
   margin-top: 50px;
   position: relative;
+  @media screen and (min-width: 767px) {
+    width: @btn-width-small;
+  }
   &:before {
     border:1px solid #cbcac9;
   }
