@@ -89,4 +89,17 @@ links.forEach(function (element) {
     filterTitle.innerHTML = evt.currentTarget.textContent;
   });
 });
+/*filters*/
+
+$(".btn-filter").click(function () {
+  if ($(this).next().is(':visible') === false) {
+    // $('#accordion ul').slideUp(280);
+    console.log($(this));
+    $(this).parent().addClass('filter-active');
+  } else {
+    $(this).parent().removeClass('filter-active');
+  }
+
+  $(this).next().slideToggle(280);
+});
 //# sourceMappingURL=scripts.js.map

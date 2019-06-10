@@ -29,6 +29,10 @@
   }
 }
 
+.rotate_180 {
+  transform: rotate(@rotate180);
+}
+
 
 .breadcrumbs-link-line {
   margin-left: 30px;
@@ -108,7 +112,19 @@ a {
     }
   }
 }
+.nav-dark-divider {
+  top: -1px;
+}
 .breadcrumbs {
+  margin-top: 30%;
+  @media screen and (min-width: 767px) {
+    margin-top: 15%;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 8%;
+  }
+
+
   &__link {
     .categ-arrow-up {
       width: 12px;
@@ -215,8 +231,8 @@ a {
 }
 .back-arrow {
   position: absolute;
-  top: 15px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   display: none;
   a {
     color: @red;
