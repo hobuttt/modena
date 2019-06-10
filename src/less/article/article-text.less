@@ -1,0 +1,19 @@
+@import "../mixins/mixins";
+
+.articles-text {
+  &__title {
+    position: relative;
+    @media screen and (min-width: 991px) {
+      &:before {
+        content: '';
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        top: -10px;
+        background-image: url('../images/polus.png');
+        background-size: cover;
+        left: -80px;
+      }
+    }
+  }
+}
