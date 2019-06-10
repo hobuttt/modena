@@ -84,7 +84,23 @@ $(document).ready(function() {
 
 
 
+  /*filters*/
 
+  if ($(window).width() < 768) {
+    $('.filter-card').removeClass('filter-active');
+    $('.accordion-inner').css('display', 'none')
+  }
+
+  $(".btn-filter").click(function(){
+
+    if($(this).next().is(':visible') === false) {
+      // $('#accordion ul').slideUp(280);
+      $(this).parent().addClass('filter-active')
+    }else {
+      $(this).parent().removeClass('filter-active')
+    }
+    $(this).next().slideToggle(300);
+  });
 });
 
 
@@ -94,27 +110,18 @@ const dd = document.querySelector('#select-wrapper');
 const links = document.querySelectorAll('.select-list span');
 const filterTitle = document.querySelector('.select-filter-title');
 
-dd.addEventListener('click', function() {
-  this.classList.toggle('is-actived');
-});
+if ($('#select-wrapper').length > 0) {
+  dd.addEventListener('click', function() {
+    this.classList.toggle('is-actived');
+  });
 
-links.forEach((element) => {
-  element.addEventListener('click', function(evt) {
-    filterTitle.innerHTML = evt.currentTarget.textContent;
-  })
-});
+  links.forEach((element) => {
+    element.addEventListener('click', function(evt) {
+      filterTitle.innerHTML = evt.currentTarget.textContent;
+    })
+  });
+}
 
 
-/*filters*/
 
-$(".btn-filter").click(function(){
 
-  if($(this).next().is(':visible') === false) {
-    // $('#accordion ul').slideUp(280);
-    console.log($(this))
-    $(this).parent().addClass('filter-active')
-  }else {
-    $(this).parent().removeClass('filter-active')
-  }
-  $(this).next().slideToggle(280);
-});
