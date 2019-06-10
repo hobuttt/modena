@@ -2,7 +2,7 @@
 
 
 .navbar-light {
-  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
   .light-nav-tel {
     color: @text-black-lite;
     &:hover {
@@ -19,6 +19,21 @@
     }
   }
 }
+.nav_collaps_light {
+  left: -100vw;
+  height: 100vh;
+  position: absolute;
+  @media screen and (min-width: 992px) {
+    left: 0;
+    height: auto;
+  }
+}
+//.shower-light {
+//  left: -14px;
+//  transition: left .5s;
+//  position: fixed;
+//  height: 105vh;
+//}
 .light-nav-links {
   .nav-item {
     border-top: 1px solid  @text-grey;
@@ -48,9 +63,12 @@
         color: @black !important;
       }
     }
-
   }
 }
+//.light-nav-links.shower {
+//  position: fixed;
+//  height: 105vh;
+//}
 .nav-dark-divider {
   border-top: 1px solid @text-black-lite;
 
