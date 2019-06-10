@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <title>Card</title>
+</head>
+
+<body id="good">
+<div class="bg-good"></div>
+<div class="container-fluid">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light color_white row flex-wrap">
+    <div class="col-12">
+      <div class="justify-content-between row">
+        <div class="col-0 col-sm-4 ">
+          <ul class=" mt-2 mt-lg-0 nav-collapse nav_collapse_pages main-nav-links ">
+            <li class="nav-item-top d-flex">
+              <div class="back-arrow ">
+                <a href="#" id="back-arrow"><img src="images/little-red-arrow.svg" alt="" class="mr-2">Назад</a>
+              </div>
+              <button type="button" class="close-nav" id="close-nav">
+                <span aria-hidden="true" class="cross"></span>
+              </button>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link d-flex justify-content-between" href="#" id="nav-catalog-link" aria-haspopup="true" aria-expanded="false">
+                <span>Каталог товаров </span><span class="chevron"></span>
+              </a>
+            </li>
+            <li class="nav-item d-block d-lg-none">
+              <a class="nav-link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link " href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Производители</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">События</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-4 text-center">
+          <a class="light-nav-tel" href="tel:887">8 (999) 999-99-99</a>
+        </div>
+        <div class="col-6 col-sm-4 d-flex justify-content-end">
+          <button type="button" class="btn nav-header-button" data-toggle="modal" data-target="#exampleModalCenter">
+            Получить консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 nav-divider-box"><div class="dropdown-divider nav-divider nav-dark-divider"></div></div>
+
+    <div class="col-12">
+      <div class="row">
+        <div class="col-12 col-lg-3 mt-3 d-flex justify-content-between">
+          <a class="navbar-brand nav-logo color_black" href="index.html">
+            <img class="nav-logo__img" src="images/main/logo.png" alt="">
+            <span class="nav-logo__text">Modena <sup>ceramics</sup></span>
+          </a>
+          <button class="navbar-toggler" type="button" id="hamburger" >
+            <span class="navbar-toggler-icons"></span>
+            <span class="navbar-toggler-icons"></span>
+            <span class="navbar-toggler-icons"></span>
+          </button>
+        </div>
+        <div class="col d-lg-flex">
+          <ul class="nav-collapse nav_collapse_categ mt-2 light-nav-categories" id="nav_collapse_categ">
+            <li class="nav-item">
+              <a class="light-nav-categories__link" href="#">Плитка</a>
+            </li>
+            <li class="nav-item">
+              <a class="light-nav-categories__link" href="#">Сантехника</a>
+            </li>
+            <li class="nav-item">
+              <a class="light-nav-categories__link" href="#">Обои</a>
+            </li>
+            <li class="nav-item">
+              <a class="light-nav-categories__link" href="#">Искусственный камень</a>
+            </li>
+            <li class="nav-item">
+              <a class="light-nav-categories__link" href="#">Ламинат</a>
+            </li>
+            <li class="nav-item">
+              <a class="light-nav-categories__link" href="#">Камины</a>
+            </li>
+            <li class="nav-item">
+              <a class="light-nav-categories__link" href="#">Тротуарная плитка</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 nav-divider-box"><div class="dropdown-divider nav-divider nav-dark-divider"></div></div>
+  </nav>
+  <div class="row">
+    <div class="col-12 mt-4">
+      <div class="breadcrumbs">
+
+        <a href="index.html" class="breadcrumbs__link color_black color_black_hover">
+          <img src="images/arrow-up.svg" alt="arrow-up" class="categ-arrow-up mr-2 d-inline-block d-lg-none">Главная</a>
+        <span class="breadcrumbs__link color_grey color_grey_hover  breadcrumbs-link-line d-lg-inline-block d-none">Плитка</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<main >
+  <section>
+    <div class="container-fluid ">
+      <div class="row good">
+        <div class="col-12 col-md-7 good-images">
+          <div class="good-images__item mt-5 pr-1"><img src="images/good/good1.jpg" alt="" class=""></div>
+          <div class="good-images__item mt-5 mt-md-4 pr-1"><img src="images/good/good2.jpg" alt="" class=""></div>
+          <div class="good-images__item mt-5 mt-md-4 pr-1"><img src="images/good/good3.jpg" alt="" class=""></div>
+        </div>
+        <div class="col-12 offset-md-1 col-md-4 mt-5">
+          <div class="good-description">
+            <div class="row">
+              <div class="col-6 mt-2">
+                <span class="color_grey">Страна</span>
+                <p>Автралия и Океания</p>
+              </div>
+              <div class="col-6 mt-2">
+                <span class="color_grey">Коллекция</span>
+                <p>Portofina</p>
+              </div>
+              <div class="col-6 mt-2">
+                <span class="color_grey">Назначение</span>
+                <p>Стены и полы</p>
+              </div>
+              <div class="col-6 mt-2">
+                <span class="color_grey">Фактура</span>
+                <p>Шероховатая</p>
+              </div>
+              <div class="col-6 mt-2">
+                <span class="color_grey">Поверхность</span>
+                <p>Лаппатированная</p>
+              </div>
+              <div class="col-6 mt-2">
+                <span class="color_grey">Материал</span>
+                <p>Белая глина</p>
+              </div>
+              <div class="col-6 mt-2">
+                <span class="color_grey">Производитель</span>
+                <p><img src="images/good/vitra-brand.png" alt=""></p>
+              </div>
+            </div>
+          </div>
+          <div id="menu_pop " class="mt-4">
+            <ul id="accordion" class=" accordion">
+              <li class="filter-card filter-active">
+                <div class="btn-filter d-flex justify-content-between py-3 pr-3">
+                  <span class="btn-filter__title">Описание</span>
+                  <div class="btn-filter__img"></div>
+                </div>
+                <div class="accordion-inner">
+                  <p>Гидродинамический удар выталкивает торсионный пульсар в полном соответствии с законом сохранения энергии. Очевидно, что химическое соединение возбуждает тахионный объект, при этом дефект массы не образуется</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="main-goods">
+    <div class="container-fluid ">
+      <div class="row main-goods">
+        <div class="col-12 mt-5 mb-4">
+          <h2>Товары из этой коллекции</h2>
+        </div>
+        <div class="col-12 ">
+          <div class="row px-3">
+
+            <div class="col-md-3 col-sm-6 col-12  main-good categ-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
+                <div class="categ-good__disc ">
+                  <p class="mt-2 color_grey">Плитка настенная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 main-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath.jpg" alt="">
+                <div class="categ-good__disc">
+                  <p class="mt-2 color_grey">Плитка настенная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12  main-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
+                <div class="categ-good__disc">
+                  <p class="mt-2 color_grey">Плитка настенная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 main-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath.jpg" alt="">
+                <div class="categ-good__disc">
+                  <p class="mt-2 color_grey">Плитка напольная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12  main-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
+                <div class="categ-good__disc">
+                  <p class="mt-2 color_grey">Плитка напольная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12 main-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath.jpg" alt="">
+                <div class="categ-good__disc">
+                  <p class="mt-2 color_grey">Плитка напольная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12  main-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
+                <div class="categ-good__disc">
+                  <p class="mt-2 color_grey">Плитка напольная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-12  main-good">
+              <a href="#" class="main-good__link">
+                <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
+                <div class="categ-good__disc">
+                  <p class="mt-2 color_grey">Плитка напольная</p>
+                  <p>Vitra Allegre</p>
+                  <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row main-goods similar-goods">
+        <div class="col-12 mt-4 mb-2">
+          <h2>Похожие товары</h2>
+        </div>
+        <div class="col-12">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active main-goods__pills-link" id="tile-tab" data-toggle="pill" href="#pills-tile" role="tab" aria-controls="pills-tile" aria-selected="true">Коллекция плитки</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-goods__pills-link" id="plumbing-tab" data-toggle="pill" href="#pills-plumbing" role="tab" aria-controls="pills-plumbing" aria-selected="false">Сантехника</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-goods__pills-link" id="wallpaper-tab" data-toggle="pill" href="#pills-wallpaper" role="tab" aria-controls="pills-wallpaper" aria-selected="false">Обои</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-tile" role="tabpanel" aria-labelledby="tile-tab">
+              <div class="row px-3">
+
+                <div class="col-md-3 col-sm-6 col-12  main-good">
+                  <a href="#" class="main-good__link">
+                    <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
+                    <div class="main-good__disc">
+                      <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Vitra</p>
+                      <p>Portofina Cerama</p>
+                      <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 main-good">
+                  <a href="#" class="main-good__link">
+                    <img class="main-good__img" src="images/main/main-goods/bath.jpg" alt="">
+                    <div class="main-good__disc">
+                      <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Grassaro</p>
+                      <p>Orient</p>
+                      <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12  main-good">
+                  <a href="#" class="main-good__link">
+                    <img class="main-good__img" src="images/main/main-goods/bath2.jpg" alt="">
+                    <div class="main-good__disc">
+                      <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Vitra</p>
+                      <p>Portofina Cerama</p>
+                      <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-3 col-sm-6 col-12 main-good">
+                  <a href="#" class="main-good__link">
+                    <img class="main-good__img" src="images/main/main-goods/bath.jpg" alt="">
+                    <div class="main-good__disc">
+                      <p class="mt-2"><img src="images/main/main-goods/sn-flag.jpg" alt=""><span class="pl-2 "></span>Grassaro</p>
+                      <p>Orient</p>
+                      <p class="good-cost">от 990 руб./м<sup>2</sup></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-plumbing" role="tabpanel" aria-labelledby="plumbing-tab">ыыыыыы</div>
+            <div class="tab-pane fade" id="pills-wallpaper" role="tabpanel" aria-labelledby="wallpaper-tab">.sd..</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="row my-5 main-about">
+        <div class="col-lg-6 col-12 offset-lg-3 text-center">
+          <p><img src="images/main/main-about/polus.png" alt=""></p>
+          <h2 class="main-about__title mt-5">Modena — это всегда актуальное предложение качественной плитки от мировых брендов</h2>
+        </div>
+      </div>
+      <div class="row mt-5 pb-5">
+        <div class="col-6 col-sm-6 col-lg-3 text-center">
+          <img src="images/main/main-about/percent.png" alt="">
+          <p class="mt-4 px-lg-5">Программа лояльности с накопительными скидками и акциями</p>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 text-center ">
+          <img src="images/main/main-about/layers.png" alt="">
+          <p class="mt-4 px-lg-5">Товар всегда в наличии на собственном складе</p>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 text-center ">
+          <img src="images/main/main-about/clock.png" alt="">
+          <p class="mt-4 px-lg-5">Срок возврата плитки 30 дней с момента покупки</p>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 text-center">
+          <img src="images/main/main-about/star.png" alt="">
+          <p class="mt-4 px-lg-5">10 лет на рынке</p>
+        </div>
+        <div class="col-lg-8 col-12 offset-lg-2 text-center mt-4">
+          Гидродинамический удар выталкивает торсионный пульсар в полном соответствии с законом сохранения энергии. Очевидно, что химическое соединение возбуждает тахионный объект, при этом дефект массы не образуется. Тело трансформирует плоскополяризованный взрыв только в отсутствие тепло- и массообмена с окружающей средой
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="bg-cover footer-bg"></div>
+  <div class="container-fluid">
+    <div class="row pt-5">
+      <div class="col-12 col-md-2 mb-4 mb-md-0">
+        <ul class=" footer-menu">
+          <li class="footer-menu__item"><a href="#">Оплата и доставка</a></li>
+          <li class="footer-menu__item"><a href="#">Оплата и доставка</a></li>
+          <li class="footer-menu__item"><a href="#">О компании</a></li>
+          <li class="footer-menu__item"><a href="#">Производители</a></li>
+          <li class="footer-menu__item"><a href="#">События</a></li>
+          <li class="footer-menu__item"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 ">
+        <div class="d-flex justify-content-md-around">
+          <ul class="footer-catalog-menu">
+            <li class="footer-catalog-menu__title"><span>Каталог товаров</span></li>
+            <li class="footer-catalog-menu__item"><a href="">Плитка</a></li>
+            <li class="footer-catalog-menu__item"><a href="">Сантехника</a></li>
+            <li class="footer-catalog-menu__item"><a href="">Ламинат</a></li>
+            <li class="footer-catalog-menu__item"><a href="">Обои</a></li>
+            <li class="footer-catalog-menu__item"><a href="">Камины</a></li>
+          </ul>
+          <ul class="footer-catalog-menu pt-4">
+            <li class="footer-catalog-menu__item"><a href="">Искусственный камень</a></li>
+            <li class="footer-catalog-menu__item"><a href="">Тротуарная плитка</a></li>
+            <li class="footer-catalog-menu__item"><a href="">Керамический кирпич</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 text-md-right">
+        <a class="footer-tel" href="tel:78614880000">8 (861) 488 00 00</a>
+        <button type="button" class="btn nav-header-button pl-0 pl-md-2" data-toggle="modal" data-target="#exampleModalCenter">
+          Заказать звонок
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12"> <div class="dropdown-divider footer-divider my-4"></div></div>
+    </div>
+    <div class="row pb-2">
+      <div class="col-12 col-md-3 footer-copy mt-1">
+        <p>&copy; Модена, 2019. Все права защищены. По всем вопросам обращайтесь modena@gmail.com</p>
+      </div>
+      <div class="col-12 col-md-3">
+        <a href="#" class="footer-polisy"> Политика конфиденциальности</a>
+      </div>
+      <div class="col-12 offset-md-4 col-md-2 justify-content-end">
+        <div class=" footer-very-good justify-content-center">
+          <a href="" class="d-flex justify-md-content-center footer-very-good-link">
+            <img src="images/very-good.svg" alt="">
+            <div class="d-flex flex-column pl-1 mt-2 mt-md-0" >
+              <span class="footer-very-good__create">Создание сайта</span><span class="footer-very-good__name">Very Good</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content footer-modal-content p-5">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true" class="cross"></span>
+      </button>
+      <div class="row">
+        <div class="col-12 text-center">
+          <h4 class="modal-title" id="exampleModalCenterTitle">Получить бесплатную консультацию</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mt-5">
+          <form action="#" method="post" id="modal-form">
+            <div class="row">
+              <div class="col-12">
+                <label class="modal-label mb-4"><input class="modal-input modal_input_large " type="text" placeholder="Как вас зовут"></label>
+
+              </div>
+              <div class="col-12 col-sm-6">
+                <label class="modal-label "><input type="tel" class="modal-input" placeholder="Ваш телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}"></label>
+              </div>
+              <div class="col-12 col-sm-6">
+                <label class="modal-label"><input type="email" class="modal-input" placeholder="Ваш email"></label>
+              </div>
+            </div>
+            <div class="d-flex mt-5 ">
+              <div class="row">
+                <div class="col-12 col-lg-8 d-flex">
+                  <input type="checkbox" name="" id="modal-privacy">
+                  <label for="modal-privacy"><span class="modal-privacy-label pl-2">Я выражаю согласие с </span>Политикой конфиденциальности</label>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-lg-end justify-content-center">
+                  <button type="submit" class="btn-base modal-btn" id="modal-btn" disabled="">Отправить</button>
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts-min.js"></script>
+</body>
+</html>

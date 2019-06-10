@@ -30,18 +30,19 @@
       display: none;
     }
   }
-}
+  .filter-active {
+    border: 1px solid @text-grey;
+    .btn-filter {
+      border-bottom: none !important;
+      &__img {
 
-.filter-active {
-  border: 1px solid @text-grey;
-  .btn-filter {
-    border-bottom: none !important;
-    &__img {
-
-      background-image: url('../images/close-black.svg') !important;
+        background-image: url('../images/close-black.svg') !important;
+      }
     }
   }
 }
+
+
 
 .btn-filter-sm {
   .btn-filter__img{

@@ -1,0 +1,86 @@
+@import "../mixins/mixins";
+
+#good {
+  position: relative;
+}
+.bg-good {
+  position: absolute;
+  background-image: url('../images/main/main-goods/main-goods-grid.png');
+  height: 100%;
+  width: 100%;
+  background-size: 96%;
+  background-position: 50% 0;
+
+}
+.good {
+  .accordion {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid transparent;
+    transition: all .9s;
+    .btn-filter {
+      cursor: pointer;
+      border-bottom: 1px solid @text-grey;
+      position: relative;
+      transition: all .9s;
+      &__title {
+        text-transform: uppercase;
+        color: @text-grey;
+        font-family: @font-tenor;
+      }
+      &__img {
+        width: 30px;
+        height: 30px;
+        background-image: url('../images/shevron-red-thin.svg');
+        background-size: 60%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+    }
+  }
+  .filter-active {
+    border-bottom: 1px solid @text-grey;
+    transition: all .9s;
+    .btn-filter {
+      transition: all .9s;
+      border-bottom: 1px solid transparent;
+      &__img {
+        background-image: url('../images/close-black.svg') !important;
+      }
+    }
+  }
+}
+
+.good-images {
+  display: flex;
+  display: -webkit-box;
+  min-width: 100%;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__item {
+    min-width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    min-width: auto;
+    overflow-x: auto;
+  }
+}
+.good-description {
+  background-color: @beige;
+  padding: 15px 20px;
+  border-bottom: 2px solid @black;
+  @media screen and (min-width: 768px) {
+    padding: 20px 30px;
+  }
+}
