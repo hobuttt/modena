@@ -101,6 +101,16 @@ $(document).ready(function() {
     }
     $(this).next().slideToggle(300);
   });
+
+
+  /*news-sort*/
+
+	$(".news-sort").on("click", ".news-sort__btn", function(){
+		$(".news-sort__btn").removeClass("active"); //удаляем класс во всех вкладках
+		$(this).addClass("active"); //добавляем класс текущей (нажатой)
+	});
+
+
 });
 
 
