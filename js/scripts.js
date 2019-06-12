@@ -1,56 +1,61 @@
 "use strict";
 
 $(document).ready(function () {
-  /*Слайдер header*/
-  $('.top-bg-slider').slick({
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    dots: false,
-    cssEase: 'linear',
-    arrows: false,
-    useTransform: true,
-    // fade: true,
-    autoplay: true,
-    autoplaySpeed: 5000
-  });
-  /*Слайдер брендов*/
+  if ($('.top-bg-slider').length > 0) {
+    /*Слайдер header*/
+    $('.top-bg-slider').slick({
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: false,
+      cssEase: 'linear',
+      arrows: false,
+      useTransform: true,
+      // fade: true,
+      autoplay: true,
+      autoplaySpeed: 5000
+    });
+  }
 
-  $('.brand-slider').slick({
-    speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    infinite: true,
-    dots: false,
-    nextArrow: $('.about-next-arrow'),
-    prevArrow: $('.about-prev-arrow'),
-    // centerMode: true,
-    // focusOnSelect: true,
-    responsive: [{
-      breakpoint: 1140,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    }, {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        centerMode: false,
-        focusOnSelect: false
-      }
-    }, {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: false
-      }
-    }]
-  });
+  if ($('.brand-slider').length > 0) {
+    /*Слайдер брендов*/
+    $('.brand-slider').slick({
+      speed: 1000,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      infinite: true,
+      dots: false,
+      nextArrow: $('.about-next-arrow'),
+      prevArrow: $('.about-prev-arrow'),
+      // centerMode: true,
+      // focusOnSelect: true,
+      responsive: [{
+        breakpoint: 1140,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          focusOnSelect: false
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false
+        }
+      }]
+    });
+  }
   /*Разлокировка кнопки в модалке*/
+
 
   $('#modal-form').on('change', function () {
     if ($('#modal-privacy').is(':checked')) {
@@ -114,6 +119,63 @@ if ($('#select-wrapper').length > 0) {
     element.addEventListener('click', function (evt) {
       filterTitle.innerHTML = evt.currentTarget.textContent;
     });
+  });
+}
+/*Map*/
+
+
+if (document.querySelector('#contacts-map')) {
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('contacts-map', {
+      center: [45.049218, 38.969579],
+      zoom: 12,
+      controls: []
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Собственный значок метки',
+      balloonContent: 'Это красивая метка'
+    }, {
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: 'images/main/logo.png',
+      // Размеры метки.
+      iconImageSize: [32, 32],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [-5, -38]
+    });
+    var zoomControl = new ymaps.control.ZoomControl({
+      options: {
+        size: "small"
+      }
+    });
+    var GeolocationControl = new ymaps.control.GeolocationControl({
+      options: {
+        size: "small"
+      }
+    });
+    myMap.geoObjects.add(myPlacemark);
+
+    if (document.body.clientWidth > 767) {
+      myMap.controls.add(zoomControl, {
+        "float": 'none',
+        position: {
+          top: '160px',
+          right: '10px'
+        }
+      });
+      myMap.controls.add(GeolocationControl, {
+        "float": 'none',
+        position: {
+          top: '240px',
+          right: '10px'
+        }
+      });
+    }
+
+    myMap.behaviors.disable('scrollZoom');
   });
 }
 //# sourceMappingURL=scripts.js.map

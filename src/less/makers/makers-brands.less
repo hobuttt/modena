@@ -1,0 +1,31 @@
+@import "../mixins/mixins";
+
+.makers-brand-wrap {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  border: 1px solid @text-grey;
+  .makers-brand {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: center;
+    &__img {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+    &__text {
+      font-size: .8rem;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+}
