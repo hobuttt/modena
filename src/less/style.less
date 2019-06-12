@@ -31,6 +31,16 @@
     color: @text-black-lite;
   }
 }
+.nav_link_dark {
+  @media screen and (min-width: 992px) {
+    font-size: 14px;
+    color: @text-black-lite;
+    font-family: @font-gerbera;
+    &:hover {
+      color: @black !important;
+    }
+  }
+}
 
 .rotate_180 {
   transform: rotate(@rotate180);
@@ -175,7 +185,6 @@ a {
         &__date {
           .news-date {
             color: @black;
-            margin-left: 20px;
           }
         }
         &__title {
@@ -213,10 +222,10 @@ a {
     .news-action {
       color: @red;
       margin-left: 10px;
+      margin-right: 20px;
     }
     .news-date {
       color: @text-black-lite;
-      margin-left: 20px;
     }
   }
   &__title {
