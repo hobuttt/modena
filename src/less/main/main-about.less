@@ -1,9 +1,14 @@
 @import "../mixins/mixins";
 
 .main-about {
+  &__title {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 767px) {
     &__title {
       font-size: 2.5rem;
-   }
+    }
+  }
 }
 .main-about-btn {
   color: @red;

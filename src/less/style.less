@@ -65,6 +65,7 @@
 
 
 body {
+
   font-family: @font-gerbera;
 }
 h1, h2, h3, h4, h5 {
@@ -80,15 +81,17 @@ a {
   height: 60px;
   background-color: transparent;
   text-transform: uppercase;
-
   &:before {
     content: "";
-    height: 3px;
+    height: 4px;
     width: 90%;
+    border: 1px solid;
     border-top: 0;
     position: absolute;
-    bottom: -3px;
+    bottom: -5px;
     left: 5%;
+    z-index: 0;
+
   }
 }
 .modal-btn {
@@ -208,10 +211,10 @@ a {
   position: relative;
 }
 .nav-divider {
-  width: 110%;
-  left: -5%;
-  position: absolute;
+  width: 105%;
   opacity: .5;
+  left: -4%;
+  position: absolute;
 }
 .news-block {
   padding: 25px;

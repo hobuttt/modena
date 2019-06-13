@@ -2,17 +2,24 @@
 
 
 .navbar-main {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
   .main-nav-tel {
+    font-size: .8rem;
     color: @base-text-white;
     &:hover {
       color: @text-black-lite;
       text-decoration: none;
     }
+    @media screen and (min-width: 992px) {
+      font-size: 1rem;
+
+    }
   }
 }
 .main-nav-categories {
   &__link {
-
     padding-right: .5rem;
     padding-left: 1rem;
     display: block;
@@ -58,7 +65,7 @@
     }
     @media screen and (min-width: 992px) {
       font-size: 14px;
-      color: @text-black-lite;
+      color: @text-grey;
       font-family: @font-gerbera;
       &:hover {
         color: @base-text-white !important;

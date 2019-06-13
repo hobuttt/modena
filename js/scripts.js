@@ -4,12 +4,12 @@ $(document).ready(function () {
   if ($('.top-bg-slider').length > 0) {
     /*Слайдер header*/
     $('.top-bg-slider').slick({
-      speed: 500,
+      speed: 900,
       slidesToShow: 1,
       slidesToScroll: 1,
       infinite: true,
-      dots: false,
-      cssEase: 'linear',
+      dots: true,
+      cssEase: 'ease-in-out',
       arrows: false,
       useTransform: true,
       // fade: true,

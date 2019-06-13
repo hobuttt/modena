@@ -5,7 +5,7 @@
 .main-bg {
   background-image: url('../images/main/main-img.jpg');
   height: 100%;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1025px) {
     min-height: 110%;
   }
 
@@ -20,7 +20,7 @@
 }
 .main-header {
   min-height: 100vh;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1025px) {
     min-height: 110vh;
   }
   display: flex;
@@ -44,17 +44,21 @@
     padding: 0 40px;
     color: @base-text-white;
     padding-top: 40px;
+    display: none;
+    @media screen and (min-width: 1025px) {
+      display: block;
+    }
   }
   &__btn {
     color: @base-text-white;
     margin-top: 70px;
     position: relative;
-    border: 1px solid @base-text-white;
+    border-color: @base-text-white;
     @media screen and (min-width: 767px) {
       width: @btn-width-small;
     }
     &:before {
-      border:1px solid #cbcac9;
+      border-color:#cbcac9;
     }
     &:hover {
       background-color: @base-text-white;
@@ -114,7 +118,10 @@
   @media screen and (min-width: 414px) {
     height: 110vh;
   }
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+  }
+  @media screen and (min-width: 1025px) {
     height: auto;
   }
 }
@@ -128,7 +135,7 @@
     background-size: cover;
     position: relative;
     z-index: -2;
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 1025px) {
       background-position: 50% 50%;
       background-size: cover;
       width: 100%;
@@ -168,6 +175,7 @@
   background-size: cover;
   background-image: url('../images/main/main-grid.png');
   z-index: 1;
+  filter: contrast(500%);
 }
 .main-top-cover {
   width: 100%;

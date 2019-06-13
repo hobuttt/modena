@@ -6,7 +6,7 @@
   position: relative;
 }
 .cover-categories {
-  margin-top: -12%;
+  margin-top: -13%;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -69,7 +69,7 @@
   }
   &__title {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 0;
     right: 0;
     text-align: center;
@@ -138,10 +138,12 @@
      background-position:  100% 80%;
      background-repeat: no-repeat;
      background-size: 85%;
+
    }
    &:after{
      background-image: url('../images/main/main-goods/main-goods-grid.png');
      background-size: cover;
+     filter: contrast(500%);
    }
    &__title {
      color: @black;
@@ -185,11 +187,14 @@
   margin: 0 auto;
   margin-top: 50px;
   position: relative;
+  border-color: @black;
   @media screen and (min-width: 767px) {
     width: @btn-width-small;
   }
   &:before {
-    border:1px solid #cbcac9;
+    border:1px solid @text-grey;
+    border-top: 0;
+
   }
   &:hover {
     background-color: #fff;

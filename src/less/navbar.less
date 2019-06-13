@@ -41,15 +41,20 @@
   }
 }
 .nav_collapse_pages {
-  left: -90vw;
+  left: -95vw;
   height: 100vh;
   position: absolute;
   @media screen and (min-width: 992px) {
     left: 0;
-    height: auto;
+    position: static;
+    height: 40px;
   }
 }
-
+.nav-tel-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .nav_collapse_categ {
   height: 100vh;
   margin-bottom: 0;
@@ -85,7 +90,7 @@
   }
 }
 .shower {
-  left: -1px;
+  left: -5vw;
   transition: left .5s;
 }
 .nav-item-top {
