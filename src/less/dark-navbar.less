@@ -6,8 +6,12 @@
   z-index: 5;
   width: 100%;
   .main-nav-tel {
-    font-size: .8rem;
+    font-size: .6rem;
     color: @base-text-white;
+    @media screen and (min-width: 360px) {
+      font-size: .8rem;
+
+    }
     &:hover {
       color: @text-black-lite;
       text-decoration: none;
