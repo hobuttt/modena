@@ -7,10 +7,10 @@ $(document).ready(function() {
       slidesToScroll: 1,
       infinite: true,
       dots: true,
+      appendDots: $('.slider-dots'),
       cssEase: 'ease-in-out',
       arrows: false,
       useTransform: true,
-      // fade: true,
       autoplay: true,
       autoplaySpeed: 5000
     });
