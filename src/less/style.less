@@ -31,6 +31,7 @@
     color: @text-black-lite;
   }
 }
+
 .nav_link_dark {
   @media screen and (min-width: 992px) {
     font-size: 14px;
@@ -81,6 +82,7 @@ a {
   height: 60px;
   background-color: transparent;
   text-transform: uppercase;
+  transition: all .3s ease-in-out;
   &:before {
     content: "";
     height: 4px;
@@ -91,6 +93,7 @@ a {
     bottom: -5px;
     left: 5%;
     z-index: 0;
+    transition: all .3s ease-in-out;
 
   }
 }
@@ -99,31 +102,38 @@ a {
   display: block;
   position: relative;
   border:1px solid @red;
+  transition: all .3s ease-in-out;
   @media screen and (min-width: 767px) {
     width: @btn-width-small;
   }
   &:before {
     border:1px solid @red;
     color: @base-text-white;
+    transition: all .3s ease-in-out;
   }
   &:hover {
     background-color: @red;
     color: #fff;
+    transition: all .3s ease-in-out;
     &:before {
       background-color: #cbcac9;
+      transition: all .3s ease-in-out;
     }
   }
   &:disabled {
     background-color: #ccc;
     color: @text-black-lite;
     border:1px solid @base-text-white;
+    transition: all .3s ease-in-out;
     &:before {
       border-color: @base-text-white;
       color: @base-text-white;
+
     }
     &:hover {
       &:before {
         background-color: @base-text-white;
+
       }
     }
   }
@@ -182,18 +192,35 @@ a {
     display: flex;
     flex-direction: column;
     height: 100%;
+    .news-block {
+    &__date {
+      .news-date {
+        transition: all .3s;
+      }
+    }
+    &__title {
+      transition: all .3s;
+    }
+    &__desk {
+      transition: all .3s;
+    }
+  }
     &:hover {
       text-decoration: none;
       .news-block {
+
         &__date {
           .news-date {
+            transition: all .3s;
             color: @black;
           }
         }
         &__title {
+          transition: all .3s;
           color: @red;
         }
         &__desk {
+          transition: all .3s;
           color: @black;
         }
       }
@@ -324,3 +351,5 @@ a {
   vertical-align: top;
   width: 0.8em;
 }
+
+
