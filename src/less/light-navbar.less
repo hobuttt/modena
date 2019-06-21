@@ -7,6 +7,7 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 0.85);
   .light-nav-tel {
+    font-family: @font-tenor;
     color: @text-black-lite;
     &:hover {
       color: @black;
@@ -31,13 +32,8 @@
     height: auto;
   }
 }
-//.shower-light {
-//  left: -14px;
-//  transition: left .5s;
-//  position: fixed;
-//  height: 105vh;
-//}
 .light-nav-links {
+  padding-left: 0;
   .nav-item {
     border-top: 1px solid  @text-grey;
     &:last-child {
@@ -55,10 +51,12 @@
     font-size: 16px;
     color: @black;
     font-family: @font-tenor;
+    padding: 1rem 2rem;
     &:hover {
       color: @text-black-lite !important;
     }
     @media screen and (min-width: 992px) {
+      padding: .5rem 1rem;
       font-size: 14px;
       color: @text-black-lite;
       font-family: @font-gerbera;
@@ -78,9 +76,9 @@
 }
 .light-nav-categories {
   &__link {
-    padding-right: .5rem;
-    padding-left: 1rem;
-    display: block;
+    padding: 6px 2rem;
+    display: flex;
+    justify-content: space-between;
     color: @black;
     font-family: @font-tenor;
     font-size: 16px;
@@ -90,10 +88,11 @@
       text-decoration: none;
     }
     @media screen and (min-width: 992px) {
-      font-size: 14px;
+      font-size: 12px;
       color: @black;
       text-transform: uppercase;
       font-family: @font-gerbera;
+      padding: .5rem 1rem;
       &:hover {
         color: @text-black-lite !important;
       }

@@ -6,6 +6,7 @@
   z-index: 5;
   width: 100%;
   .main-nav-tel {
+    font-family: @font-tenor;
     font-size: .6rem;
     color: @base-text-white;
     @media screen and (min-width: 360px) {
@@ -18,35 +19,40 @@
     }
     @media screen and (min-width: 992px) {
       font-size: 1rem;
-
     }
   }
 }
 .main-nav-categories {
   &__link {
-    padding-right: .5rem;
-    padding-left: 1rem;
-    display: block;
+    padding: 6px 2rem;
     color: @black;
     font-family: @font-tenor;
     font-size: 16px;
+    display: flex;
+    justify-content: space-between;
 
     &:hover {
       color: @text-black-lite;
       text-decoration: none;
     }
     @media screen and (min-width: 992px) {
-      font-size: 14px;
+      font-size: 13px;
       color: @base-text-white;
       text-transform: uppercase;
       font-family: @font-gerbera;
+      padding: .5rem 1rem;
       &:hover {
         color: @text-black-lite !important;
       }
     }
+    @media screen and (width: 1024px) {
+      font-size: 12px;
+    }
   }
 }
 .main-nav-links {
+  padding-left: 0;
+
   .nav-item {
     border-top: 1px solid  @text-grey;
     &:last-child {
@@ -64,6 +70,8 @@
     font-size: 16px;
     color: @black;
     font-family: @font-tenor;
+    padding: 1rem 2rem;
+
     &:hover {
       color: @text-black-lite !important;
     }
@@ -71,10 +79,12 @@
       font-size: 14px;
       color: @text-grey;
       font-family: @font-gerbera;
+      padding: .5rem 1rem;
       &:hover {
         color: @base-text-white !important;
       }
     }
 
   }
+
 }

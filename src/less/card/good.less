@@ -5,12 +5,17 @@
 }
 .bg-good {
   position: absolute;
-  background-image: url('../images/main/main-goods/main-goods-grid.png');
   height: 100%;
   width: 100%;
-  background-size: 96%;
   background-position: 50% 0;
+  background-image: url('../images/cross-dark.png');
+  background-repeat: repeat;
+  background-size: 32%;
+  z-index: 0;
+  @media screen and (min-width: 1025px) {
+    background-size: 15%;
 
+  }
 }
 .good {
   .accordion {
@@ -26,7 +31,7 @@
       transition: all .9s;
       &__title {
         text-transform: uppercase;
-        color: @text-grey;
+        color: @text-black-lite;
         font-family: @font-tenor;
       }
       &__img {
@@ -90,11 +95,9 @@
 }
 .order-buttons {
   .btn-order {
-    width: 100%;
     margin: 0;
 
     @media screen and (min-width: 768px) {
-      text-align: right;
       padding-right: 20px;
     }
   }
