@@ -15,31 +15,25 @@ footer {
   &:before {
     opacity: .8;
     background-color: #1C2125;
-
   }
   &:after{
-    background-image: url('../images/footer-grid.png');
+    background-image: url('../images/main/cross.png');
+    background-repeat: repeat !important;
+    background-size: 32% !important;
     z-index: 0;
+    @media screen and (min-width: 1025px) {
+      background-size: 15% !important;
+    }
   }
 }
-footer {
-  color: #fff;
-  .footer-very-good {
-    &__create {
-      color: lighten(@text-black-lite, 20%);
 
-    }
-    &__name {
-      color: @base-text-white;
-    }
-  }
-}
 .footer-menu {
   list-style: none;
   padding-inline-start: 0;
 
   &__item {
     padding-top: 8px;
+    font-size: 16px;
     a {
       color: @base-text-white;
       font-family: @font-tenor;
@@ -54,14 +48,17 @@ footer {
 .footer-catalog-menu {
   padding-inline-start: 0;
   list-style: none;
+  padding-top: 5px;
   &__title {
     font-family: @font-tenor;
+    color: @base-text-white;
+    font-size: 16px;
   }
   &__item {
     padding-top: 5px;
     a {
       color: lighten(@text-black-lite, 20%);
-      font-size: .9rem;
+      font-size: 14px;
       text-decoration: none;
       &:hover {
         color: @base-text-white;
@@ -102,6 +99,10 @@ footer {
   }
 }
 .footer-very-good-link {
+  img {
+    width: 27px;
+    margin-right: 10px;
+  }
   &:hover {
     text-decoration: none;
     color: lighten(@text-black-lite, 20%);

@@ -17,7 +17,7 @@
     border: none;
     border-top: 1px solid @red;
     border-bottom: 1px solid @red;
-    transition: 0.3s;
+    transition: 0.2s;
     transform: scaleX(0);
 
   }
@@ -31,7 +31,7 @@
     border: none;
     border-right: 1px solid @red;
     border-left: 1px solid @red;
-    transition: 0.3s;
+    transition: 0.2s;
     transform: scaleY(0);
   }
   .boreds-draw{
@@ -52,7 +52,7 @@
       border: none;
       border-top: 1px solid #b3b1b0;
       border-bottom: 1px solid #b3b1b0;
-      transition: 0.3s;
+      transition: 0.2s;
       transform: scaleX(0);
     }
 
@@ -66,29 +66,29 @@
       border: none;
       border-right: 1px solid #b3b1b0;
       border-left: 1px solid #b3b1b0;
-      transition: 0.3s;
+      transition: 0.2s;
       transform: scaleY(0);
     }
   }
 }
 
 
-.arrow-black-box{
+.draw-arrow-box{
   position: absolute;
   top: 50%;
   left: 15px;
-  .arrow-black {
+  .draw-arrow {
     width: 40px;
     height: 1px;
     background-color: #000;
-    transition: all .3s;
+    transition: all .2s;
     &:before, &:after{
       position: absolute;
       content: '';
       height: 1px;
       width: 10px;
       background-color: #000;
-      transition: 0.5s;
+      transition: 0.3s;
     }
     &:before {
       top: -2px;
