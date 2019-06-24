@@ -206,6 +206,10 @@ a {
 .news-item {
   display: flex;
   margin-bottom: 30px;
+  width: 90%;
+  @media screen and (min-width: 1366px) {
+    width: 90%;
+  }
   &__link {
     color: @black;
     width: 100%;
@@ -279,6 +283,9 @@ a {
     }
   }
   &__title {
+    @media screen and (min-width: 768px) {
+      font-size: 1.1rem;
+    }
   }
   &__desk {
     color: @text-black-lite;
