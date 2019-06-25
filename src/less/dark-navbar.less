@@ -23,6 +23,24 @@
   }
 }
 .main-nav-categories {
+  .nav-item {
+    &:first-child {
+      position: relative;
+      &:before {
+        content: '';
+        transition: .5s;
+        position: absolute;
+        width: 16px;
+        height: 8px;
+        border: 16px solid transparent;
+        border-top: 16px solid lighten(@text-grey, 10%);
+        top: 0;
+        left: 25px;
+        z-index: 10;
+        display: block;
+      }
+    }
+  }
   &__link {
     padding: 6px 2rem;
     color: @black;
@@ -32,7 +50,7 @@
     justify-content: space-between;
 
     &:hover {
-      color: @text-black-lite;
+      //color: @text-black-lite;
       text-decoration: none;
     }
     @media screen and (min-width: 992px) {
@@ -72,9 +90,9 @@
     font-family: @font-tenor;
     padding: 1rem 2rem;
 
-    &:hover {
-      color: @text-black-lite !important;
-    }
+    //&:hover {
+    //  color: @text-black-lite !important;
+    //}
     @media screen and (min-width: 992px) {
       font-size: 14px;
       color: @text-grey;
