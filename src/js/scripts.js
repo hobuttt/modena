@@ -72,16 +72,21 @@ $(document).ready(function() {
   $('#close-nav').on('click', () => {
     $('.nav_collapse_pages').toggleClass('shower');
     $('.nav_collapse_categ').removeClass('shower');
-    $('.back-arrow').removeClass('d-block')  });
+    $('.back-arrow').removeClass('d-block');
+		$('#nav-catalog-link').toggleClass('shower-cover');
+  });
 
   $('#nav-catalog-link').on('click', () => {
     $('.nav_collapse_categ').toggleClass('shower');
-    $('.back-arrow').toggleClass('d-block')
+    $('.back-arrow').toggleClass('d-block');
+    $('#nav-catalog-link').toggleClass('shower-cover');
+
   });
 
   $('#back-arrow').on('click', () => {
     $('.nav_collapse_categ').toggleClass('shower');
     $('.back-arrow').removeClass('d-block')
+		$('#nav-catalog-link').toggleClass('shower-cover');
   });
 
   var hammertime = new Hammer(document.body, {
@@ -94,6 +99,8 @@ $(document).ready(function() {
     hammertime.on('swipeleft', function (ev) {
       $('.nav_collapse_categ').removeClass('shower');
       $('.nav_collapse_pages').removeClass('shower');
+			$('#nav-catalog-link').toggleClass('shower-cover');
+			$('.back-arrow').removeClass('d-block')
     });
 
     // hammertime.on('swiperight', function (ev) {
