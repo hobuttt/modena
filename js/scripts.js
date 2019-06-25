@@ -102,7 +102,7 @@ $(document).ready(function () {
 
   if ($(window).width() < 768) {
     $('.filter-card').removeClass('filter-active');
-    $('.accordion-inner').css('display', 'none');
+    $('.accordion-card-inner').css('display', 'none');
   }
 
   $(".btn-filter").click(function () {
