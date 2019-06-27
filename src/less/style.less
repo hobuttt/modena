@@ -48,6 +48,8 @@
 .goods_card_first_title {
   font-size: 12px;
   color: @text-black-lite;
+  margin-left: 15px;
+  margin-bottom: 7px;
 }
 .rotate_180 {
   transform: rotate(@rotate180);
@@ -160,18 +162,12 @@ a {
   top: -1px;
 }
 .breadcrumbs {
-  margin-top: 36%;
+  margin-top: 130px;
   @media screen and (min-width: 414px) {
-    margin-top: 30%;
-  }
-  @media screen and (min-width: 767px) {
-    margin-top: 15%;
-  }
-  @media screen and (min-width: 1024px) {
-    margin-top: 12%;
+    margin-top: 120px;
   }
   @media screen and (min-width: 1366px) {
-    margin-top: 8%;
+    margin-top: 130px;
   }
 
   &__link {
@@ -271,26 +267,29 @@ a {
   position: absolute;
 }
 .news-block {
-  padding: 25px;
+  padding: 32px;
   &__date {
     .news-action-img {
       vertical-align: baseline;
     }
     .news-action {
       color: @red;
-      margin-left: 10px;
-      margin-right: 20px;
+      margin-left: 5px;
+      margin-right: 10px;
     }
     .news-date {
       color: @text-black-lite;
+
     }
   }
   &__title {
+    margin-top: 20px;
     @media screen and (min-width: 768px) {
-      font-size: 1.1rem;
+      font-size: 20px;
     }
   }
   &__desk {
+    margin-top: 20px;
     color: @text-black-lite;
   }
 }
