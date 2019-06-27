@@ -151,8 +151,8 @@
 .nav-header-button {
   color: @top-btn;
   position: relative;
-  font-size: .7rem;
   padding: 5px 0;
+  font-size: 13px;
   @media screen and (min-width: 768px) {
     padding: 6px 10px;
   }
@@ -177,13 +177,19 @@
     }
   }
   @media screen and (min-width: 992px) {
-    font-size: 1rem;
+    font-size: 13px;
     &:before {
       display: block;
     }
   }
 }
-
+footer {
+  .nav-header-button {
+    &:before {
+      top: 14px;
+    }
+  }
+}
 .nav-light-divider {
   border-top: 1px solid @base-text-white;
 }

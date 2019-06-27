@@ -110,13 +110,17 @@
     .nav-link {
       border-radius: 0;
       margin-left: 0;
+      border-top: 2px solid transparent;
+      transition: .3s;
       &:hover {
         color: @red;
+        transition: .3s;
       }
       &.active, .nav-pills .show > .nav-link {
         color: @red;
         background-color: transparent;
         border-top: 2px solid @red;
+        transition: .3s;
       }
     }
   }
@@ -169,7 +173,15 @@
     transition: all .3s ease-in-out;
   }
   &__link {
+    transition: all .3s ease-in-out;
+    &:before {
+      transition: all .3s ease-in-out;
+    }
+    .good-cost {
+      transition: all .3s ease-in-out;
+    }
     &:hover {
+      transition: all .3s ease-in-out;
       text-decoration: none;
       .main-good__disc {
         background-color: @bg-white;
@@ -178,6 +190,7 @@
       .good-cost {
         position: relative;
         color: @black;
+        transition: all .3s ease-in-out;
         &:before {
           content: "";
           position: absolute;
@@ -212,9 +225,11 @@
   &:hover {
     background-color: #fff;
     transition: all .3s ease-in-out;
+    border-color: transparent;
     &:before {
-      background-color: #cbcac9;
+      background-color: @base-text-white;
       transition: all .3s ease-in-out;
+      border-color: transparent;
     }
   }
 }

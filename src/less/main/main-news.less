@@ -23,10 +23,17 @@
   display: -webkit-box;
   min-width: 100%;
   overflow-x: auto;
+  flex-wrap: nowrap;
   &::-webkit-scrollbar {
     display: none;
   }
   @media screen and (min-width: 768px) {
+    .news-item {
+      width: 48%;
+    }
+
+  }
+  @media screen and (min-width: 769px) {
     min-width: auto;
     display: flex;
     overflow-x: visible;

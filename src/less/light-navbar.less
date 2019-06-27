@@ -9,9 +9,14 @@
   .light-nav-tel {
     font-family: @font-tenor;
     color: @text-black-lite;
+    transition: .5s;
     &:hover {
       color: @black;
       text-decoration: none;
+      transition: .5s;
+    }
+    @media screen and (min-width: 992px) {
+      font-size: 1rem;
     }
   }
   .nav-header-button {
@@ -71,8 +76,8 @@
 //  height: 105vh;
 //}
 .nav-dark-divider {
-  border-top: 1px solid @text-black-lite;
-
+  border-top: 1px solid @black;
+  opacity: .1 !important;
 }
 .light-nav-categories {
   .nav-item {

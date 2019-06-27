@@ -50,6 +50,7 @@
     color: @base-text-white;
     padding-top: 40px;
     display: none;
+    font-weight: 200;
     @media screen and (min-width: 1025px) {
       display: block;
     }
@@ -61,6 +62,7 @@
     border-color: @base-text-white !important;
     @media screen and (min-width: 767px) {
       width: @btn-width-small;
+      margin-left: 6px;
     }
     &:before {
       border-color:#cbcac9;
@@ -68,8 +70,10 @@
     &:hover {
       background-color: @base-text-white;
       color: @black;
+      border-color: transparent;
       &:before {
         background-color: #cbcac9;
+        border-color: transparent;
       }
     }
   }
@@ -108,7 +112,10 @@
 
   }
   @media screen and (min-width: 1025px) {
-    bottom: -25%;
+    bottom: -30%;
+  }
+  @media screen and (min-width: 1367px) {
+    bottom: -52%;
   }
 }
 
@@ -139,12 +146,14 @@
       height: 5px;
       display: block;
       width: 40px;
-      transition: width .5s;
+      transition: .5s;
       background-color: transparent;
       border: none;
       outline: none;
       border-top: 1px solid #ffffff;
+
       &:hover {
+        transition: .3s;
         border-color: @red;
       }
     }

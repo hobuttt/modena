@@ -19,8 +19,9 @@ footer {
   &:after{
     background-image: url('../images/main/cross.png');
     background-repeat: repeat !important;
-    background-size: 32% !important;
+    background-size: 30% !important;
     z-index: 0;
+    opacity: .3;
     @media screen and (min-width: 1025px) {
       background-size: 15% !important;
     }
@@ -72,6 +73,7 @@ footer {
   color: @base-text-white;
   display: block;
   padding-right: 10px;
+  font-size: 16px;
   &:hover {
     color: lighten(@text-black-lite, 20%);
     text-decoration: none;

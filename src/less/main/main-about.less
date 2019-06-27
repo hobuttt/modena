@@ -17,6 +17,7 @@
   margin-top: 50px;
   position: relative;
   border:1px solid @red;
+  transition: .3s;
   @media screen and (min-width: 767px) {
     width: @btn-width-small;
   }
@@ -28,8 +29,11 @@
   &:hover {
     background-color: @red;
     color: #fff;
+    border-color: transparent;
+    transition: .3s;
     &:before {
       background-color: @red;
+      border-color: transparent;
     }
   }
 }

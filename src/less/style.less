@@ -109,7 +109,7 @@ a {
     left: 5%;
     z-index: 0;
     transition: all .3s ease-in-out;
-
+    opacity: .5;
   }
 }
 .modal-btn {
@@ -131,9 +131,11 @@ a {
     background-color: @red;
     color: #fff;
     transition: all .3s ease-in-out;
+    border-color: transparent;
     &:before {
       background-color: @red;
       transition: all .3s ease-in-out;
+      border-color: transparent;
     }
   }
   &:disabled {
@@ -264,7 +266,7 @@ a {
 }
 .nav-divider {
   width: 104.8%;
-  opacity: .5;
+  opacity: .2;
   left: -4%;
   position: absolute;
 }
