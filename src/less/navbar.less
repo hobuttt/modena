@@ -8,7 +8,6 @@
   }
 }
 .nav-logo {
-
   &__text {
     padding-left: 10px;
     text-transform: uppercase;
@@ -102,6 +101,9 @@
       top: 0;
       &:last-child {
         border-bottom: 0;
+        .main-nav-categories__link {
+          padding-right: 0;
+        }
       }
     }
   }
@@ -153,7 +155,9 @@
   padding: 5px 0;
   @media screen and (min-width: 768px) {
     padding: 6px 10px;
-
+  }
+  @media screen and (min-width: 1200px) {
+    padding-right: 0;
   }
   &:before {
     content: "";
@@ -219,3 +223,5 @@
     background-color: @black;
   }
 }
+
+

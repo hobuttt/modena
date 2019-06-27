@@ -33,7 +33,7 @@
     }
   }
   &__title {
-    font-family: Tenor-Sans;
+    font-family: @font-tenor;
     font-size: 2.5rem;
     color: @base-text-white;
     @media screen and (min-width: 767px) {
@@ -41,11 +41,15 @@
     }
   }
   &__subtitle {
-    font-family: Gerbera;
+    font-family: @font-gerbera;
     font-size: 16px;
     padding: 0 40px;
     color: @base-text-white;
     padding-top: 40px;
+    display: none;
+    @media screen and (min-width: 1025px) {
+      display: block;
+    }
   }
   &__btn {
 
