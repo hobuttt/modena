@@ -9,6 +9,7 @@
 }
 .nav-logo {
   &__text {
+    font-family: @font-tenor;
     padding-left: 10px;
     text-transform: uppercase;
     font-size: 18px;
@@ -188,8 +189,16 @@
 footer {
   .nav-header-button {
     padding-right: 6px;
+    display: block;
+    @media screen and (min-width: 768px) {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    @media screen and (min-width: 1024px) {
+      padding-right: 0;
+    }
     &:before {
-      top: 14px;
+      display: none;
     }
   }
 }

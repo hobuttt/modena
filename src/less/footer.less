@@ -76,8 +76,29 @@ footer {
   font-family: @font-tenor;
   color: @base-text-white;
   display: block;
-  padding-right: 10px;
+
   font-size: 16px;
+  max-width: 160px;
+  position: relative;
+  margin-top: 15px;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+  }
+  &:before {
+    content: "";
+    width: 24px;
+    height: 1px;
+    border-bottom: 1px solid @top-btn;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    @media screen and (min-width: 768px) {
+      top: 12px;
+      left: -15px;
+    }
+  }
   &:hover {
     color: lighten(@text-black-lite, 20%);
     text-decoration: none;

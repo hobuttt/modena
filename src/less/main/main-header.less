@@ -19,48 +19,68 @@
 //  }
 //}
 .main-header {
-  min-height: 100vh;
+  min-height: 80vh;
   @media screen and (min-width: 1025px) {
     min-height: 110vh;
   }
   display: flex;
   align-items: center;
   &__row {
-    margin-top: -10%;
+    margin-top: 15%;
     z-index: 3;
     position: relative;
+    @media screen and (min-width: 768px) and (orientation: portrait){
+      margin-top: 10%;
+    }
+
+    @media screen and (min-width: 1024px){
+      margin-top: -10%;
+    }
   }
   &__title {
     font-family: @font-tenor;
-    font-size: 2.6rem;
+    font-size: 32px;
     color: @base-text-white;
-
+    padding-right: 100px;
     @media screen and (min-width: 768px) and (orientation: portrait){
       font-size: 4rem;
     }
-
+    @media screen and (min-width: 768px) {
+      font-size: 2.6rem;
+      padding-right: 70px;
+    }
+    @media screen and (min-width: 1024px) and (orientation: portrait){
+      font-size: 56px;
+    }
     @media screen and (min-width: 1025px) {
-      font-size: 4rem;
+      font-size: 56px;
+    }
+    @media screen and (min-width: 1366px) {
+      padding-right: 0;
     }
   }
   &__subtitle {
     font-family: @font-gerbera;
     font-size: 16px;
-    padding: 0 40px;
+    padding: 0 20px;
     color: @base-text-white;
-    padding-top: 40px;
     display: none;
     font-weight: 200;
+    margin-top: 40px;
     @media screen and (min-width: 1025px) {
       display: block;
+    }
+    @media screen and (min-width: 1600px) {
+      padding: 0 40px;
     }
   }
   &__btn {
     color: @base-text-white;
-    margin-top: 70px;
+    margin-top: 40px;
     position: relative;
     border-color: @base-text-white !important;
     @media screen and (min-width: 767px) {
+      margin-top: 70px;
       width: @btn-width-small;
       margin-left: 6px;
     }
@@ -172,8 +192,8 @@
   position: absolute;
   width: 100%;
   overflow: hidden;
-  z-index: -1;
-  height: 110vh;
+  z-index: -3;
+  height: 80vh;
   top: 0;
   @media screen and (min-width: 411px) {
     height: 110vh;
@@ -227,7 +247,7 @@
   background-repeat: repeat;
   background-size: 32%;
   background-image: url('../images/main/cross.png');
-  z-index: 1;
+  z-index: 0;
   opacity: .8;
   @media screen and (min-width: 1025px) {
     background-size: 15%;
@@ -240,6 +260,6 @@
   position: absolute;
   opacity: .5;
   background-color: #1C2125;
-  z-index: 0;
+  z-index: -1;
 
 }
