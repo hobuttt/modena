@@ -7,6 +7,20 @@
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
+  &__prev {
+    top: -25px;
+  }
+  &__next {
+    top: 33px;
+  }
+  @media screen and (min-width: 768px) {
+    &__prev {
+      top: 0;
+    }
+    &__next {
+      top: 55px;
+    }
+  }
   &:before {
     content: '';
     position: absolute;

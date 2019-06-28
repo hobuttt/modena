@@ -35,14 +35,14 @@
         text-transform: uppercase;
         color: @text-black-lite;
         font-family: @font-tenor;
+        font-size: 16px;
       }
       &__img {
         width: 30px;
         height: 30px;
         background-image: url('../images/shevron-red-thin.svg');
         background-size: 60%;
-        top: 0;
-        bottom: 0;
+        top: 30px;
         right: 0;
         margin: auto;
         background-repeat: no-repeat;
@@ -68,6 +68,7 @@
   display: -webkit-box;
   min-width: 100%;
   overflow-x: auto;
+  z-index: 2;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -115,6 +116,6 @@
 
 }
 .accordion-card-inner {
-  max-height: 200px;
-  overflow-y: auto;
+  //max-height: 200px;
+  //overflow-y: auto;
 }

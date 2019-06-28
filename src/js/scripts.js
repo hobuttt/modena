@@ -107,6 +107,8 @@ $(document).ready(function() {
     //   $('.nav_collapse_pages').addClass('shower');
     // });
   }
+
+
   /*filters*/
 
   if ($(window).width() < 768) {
