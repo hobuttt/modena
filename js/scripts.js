@@ -201,6 +201,8 @@ if (document.querySelector('#contacts-map')) {
     myMap.behaviors.disable('scrollZoom');
   });
 }
+/*input*/
+
 
 $('.modal-input').on('input', function () {
   var $this = $(this);
@@ -209,6 +211,15 @@ $('.modal-input').on('input', function () {
     $this.removeClass('modal-input_filled');
   } else {
     $this.addClass('modal-input_filled');
+  }
+});
+$('.filter-cost__input').on('input', function () {
+  var $this = $(this);
+
+  if ($this.val() === '') {
+    $this.removeClass('input_filled');
+  } else {
+    $this.addClass('input_filled');
   }
 });
 //# sourceMappingURL=scripts.js.map

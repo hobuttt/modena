@@ -25,12 +25,12 @@
     padding: 0;
     margin: 0;
     border-bottom: 1px solid transparent;
-    transition: all .9s;
+    transition: all .9s ease-in-out;
     .btn-filter {
       cursor: pointer;
       border-bottom: 1px solid @text-grey;
       position: relative;
-      transition: all .9s;
+      transition: all .9s ease-in-out;
       &__title {
         text-transform: uppercase;
         color: @text-black-lite;
@@ -47,16 +47,19 @@
         margin: auto;
         background-repeat: no-repeat;
         position: absolute;
+        transition: top .3s ease-in-out;
       }
     }
   }
   .filter-active {
     border-bottom: 1px solid @text-grey;
-    transition: all .9s;
+    transition: all .9s ease-in-out;
     .btn-filter {
-      transition: all .9s;
+      transition: all .9s ease-in-out;
       border-bottom: 1px solid transparent;
       &__img {
+        top: 25px !important;
+        transition: top .3s ease-in-out;
         background-image: url('../images/close-black.svg') !important;
       }
     }

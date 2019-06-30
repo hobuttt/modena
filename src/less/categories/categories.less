@@ -36,7 +36,7 @@
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
   padding-right: 10px;
   &:before {
     content: "";
@@ -46,9 +46,9 @@
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 0;
+    right: 10px;
     background-image: url(../images/chevron-little.svg);
-    background-size: 60%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 
@@ -86,10 +86,10 @@
 
       &:before {
         opacity: 0;
-        transition: .5s;
+        transition: .5s ease-in-out;
       }
       &:after {
-        transition: .5s;
+        transition: .5s ease-in-out;
         border: 1px solid transparent;
       }
 
@@ -98,7 +98,7 @@
       .boreds-draw-box{
         top: 32%;
         @media screen and (min-width: 1025px) {
-          top: 42%;
+          top: 40%;
         }
         &:before{
           transform: scaleX(1);
@@ -131,7 +131,7 @@
       .category-item-box {
         &:before {
           opacity: .3;
-          transition: .5s;
+          transition: .5s ease-in-out;
         }
         &:after {
           content: "";
@@ -145,7 +145,7 @@
           position: absolute;
           z-index: 1;
           border-color: @red;
-          transition: .5s;
+          transition: .5s ease-in-out;
         }
       }
       .category-item-link__name {
@@ -153,7 +153,7 @@
       }
     }
     .boreds-draw-box {
-      top: 42%;
+      top: 40%;
       left: 80%;
       position: absolute;
       z-index: 4;
@@ -178,7 +178,7 @@
       width: 100%;
       position: relative;
       &:after {
-        transition: all .3s;
+        transition: all .3s ease-in-out;
       }
     }
     &:before {
@@ -189,10 +189,10 @@
       position: absolute;
       z-index: 1;
       opacity: 0;
-      transition: all .3s;
+      transition: all .3s ease-in-out;
     }
     &:after{
-      transition: all .3s;
+      transition: all .3s ease-in-out;
     }
 
   }
@@ -215,7 +215,7 @@
   border-top: none;
   border-bottom: none;
   list-style: none;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
 
   /* Hiding */
   max-height: 0;
@@ -238,7 +238,7 @@
     text-decoration: none;
     color: #333;
     padding: 10px 0;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
     border-bottom: 1px solid #e6e8ea;
   }
 }
@@ -246,7 +246,7 @@
   &__disc {
     padding: 5px 20px;
     color: @black;
-    transition: .5s;
+    transition: .5s ease-in-out;
   }
 }
 .main-good__link {
@@ -254,7 +254,7 @@
     text-decoration: none;
     .categ-good__disc {
       background-color: lighten(@text-grey, 15%);
-      transition: .5s;
+      transition: .5s ease-in-out;
 
     }
   }
@@ -263,13 +263,15 @@
 .category-btn {
   color: @black;
   position: relative;
-  border: 1px solid @black;
+  border: 1px solid #1C2125;
   margin: 0 auto;
   display: block;
   @media screen and (min-width: 767px) {
     width: 100%;
   }
   &:before {
+    width: 95%;
+    left: 2.5%;
     border:1px solid @black;
     border-top: 0;
   }

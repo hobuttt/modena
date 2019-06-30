@@ -6,15 +6,15 @@
   }
   &__link {
     color: @red;
-
+    transition: color .3s ease-in-out;
     &:hover {
       color: @black;
+      transition: color .3s ease-in-out;
       text-decoration: none;
     }
     img {
       margin-left: 5px;
     }
-
   }
 }
 
@@ -31,7 +31,6 @@
     .news-item {
       width: 48%;
     }
-
   }
   @media screen and (min-width: 769px) {
     min-width: auto;

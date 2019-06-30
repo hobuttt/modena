@@ -31,7 +31,7 @@
     border: none;
     border-top: 1px solid @red;
     border-bottom: 1px solid @red;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
     transform: scaleX(0);
 
   }
@@ -45,7 +45,7 @@
     border: none;
     border-right: 1px solid @red;
     border-left: 1px solid @red;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
     transform: scaleY(0);
   }
   .boreds-draw{
@@ -66,7 +66,7 @@
       border: none;
       border-top: 1px solid #b3b1b0;
       border-bottom: 1px solid #b3b1b0;
-      transition: 0.2s;
+      transition: 0.2s ease-in-out;
       transform: scaleX(0);
     }
 
@@ -80,7 +80,7 @@
       border: none;
       border-right: 1px solid #b3b1b0;
       border-left: 1px solid #b3b1b0;
-      transition: 0.2s;
+      transition: 0.2s ease-in-out;
       transform: scaleY(0);
     }
   }
@@ -95,14 +95,14 @@
     width: 40px;
     height: 1px;
     background-color: #000;
-    transition: all .2s;
+    transition: all .2s ease-in-out;
     &:before, &:after{
       position: absolute;
       content: '';
       height: 1px;
       width: 10px;
       background-color: #000;
-      transition: 0.3s;
+      transition: 0.3s ease-in-out;
     }
     &:before {
       top: -2px;
