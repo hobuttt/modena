@@ -9,12 +9,12 @@
   .light-nav-tel {
     font-family: @font-tenor;
     color: @text-black-lite;
-    transition: .5s;
+    transition: .5s ease-in-out;
     font-size: 12px;
     &:hover {
       color: @black;
       text-decoration: none;
-      transition: .5s;
+      transition: .5s ease-in-out;
     }
     @media screen and (min-width: 992px) {
       font-size: 16px;
@@ -72,10 +72,6 @@
     }
   }
 }
-//.light-nav-links.shower {
-//  position: fixed;
-//  height: 105vh;
-//}
 .nav-dark-divider {
   border-top: 1px solid @black;
   opacity: .1 !important;
@@ -84,9 +80,10 @@
   .nav-item {
     &:first-child {
       position: relative;
+      border-top: 0;
       &:before {
         content: '';
-        transition: .5s;
+        transition: .5s ease-in-out;
         position: absolute;
         width: 16px;
         height: 8px;
@@ -96,7 +93,7 @@
         left: 25px;
         z-index: 10;
         display: block;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 769px) {
           display: none;
         }
       }

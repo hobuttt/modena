@@ -215,11 +215,22 @@ if (document.querySelector('#contacts-map')) {
   });
 }
 
+/*input*/
+
 $('.modal-input').on('input', function(){
   var $this = $(this);
   if ($this.val() === '') {
     $this.removeClass('modal-input_filled');
   } else {
     $this.addClass('modal-input_filled');
+  }
+});
+
+$('.filter-cost__input').on('input', function(){
+  var $this = $(this);
+  if ($this.val() === '') {
+    $this.removeClass('input_filled');
+  } else {
+    $this.addClass('input_filled');
   }
 });

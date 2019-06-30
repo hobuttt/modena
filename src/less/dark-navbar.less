@@ -9,13 +9,13 @@
     font-family: @font-tenor;
     font-size: .6rem;
     color: @base-text-white;
-    transition: .5s;
+    transition: .3s ease-in-out;
     @media screen and (min-width: 360px) {
       font-size: 12px;
     }
     &:hover {
       color: @text-black-lite;
-      transition: .5s;
+      transition: .3s ease-in-out;
       text-decoration: none;
     }
     @media screen and (min-width: 992px) {
@@ -26,10 +26,11 @@
 .main-nav-categories {
   .nav-item {
     &:first-child {
+      border-top: 0;
       position: relative;
       &:before {
         content: '';
-        transition: .5s;
+        transition: .5s ease-in-out;
         position: absolute;
         width: 16px;
         height: 8px;
@@ -63,10 +64,10 @@
       text-transform: uppercase;
       font-family: @font-gerbera;
       padding: .5rem 1rem;
-      transition: .3s;
+      transition: .3s ease-in-out;
       &:hover {
         color: @text-black-lite !important;
-        transition: .3s;
+        transition: .3s ease-in-out;
       }
     }
     @media screen and (width: 1024px) {
@@ -108,9 +109,9 @@
       color: @text-grey;
       font-family: @font-gerbera;
       padding: .5rem 1rem;
-      transition: .3s;
+      transition: .3s ease-in-out;
       &:hover {
-        transition: .3s;
+        transition: .3s ease-in-out;
         color: @base-text-white !important;
       }
     }

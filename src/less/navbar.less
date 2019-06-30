@@ -41,7 +41,7 @@
   list-style: none;
   z-index: 3;
   top: -16px;
-  transition: left .5s;
+  transition: left .5s ease-in-out;
   @media screen and (min-width: 992px) {
     flex-direction: row;
     height: auto;
@@ -83,10 +83,10 @@
   top: 22.5%;
   z-index: 4;
   @media screen and (min-width: 375px) {
-    top: 19.5%;
+    top: 19.4%;
   }
   @media (height: 812px) and (width: 375px) {
-    top: 16%;
+    top: 15.9%;
   }
   @media screen and (min-width: 411px) {
     top: 17%;
@@ -126,12 +126,13 @@
 }
 .shower {
   left: 0;
-  transition: left .5s;
+  transition: left .5s ease-in-out;
   position: fixed;
 }
 .shower-cover {
   background-color: lighten(@text-grey, 10%);
-  transition: .5s;
+  transition: .5s ease-in-out;
+  border-bottom: 0;
 
   .chevron {
     visibility: hidden;
@@ -223,7 +224,7 @@ footer {
     right: 3px;
     top: 0;
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease-in-out;
     &:nth-child(1){
       margin-top: 11px;
       z-index: 1;
