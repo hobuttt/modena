@@ -17,13 +17,18 @@
     }
   }
 }
-
+.main-news-container-wrap {
+  @media screen and (max-width:768px) {
+    overflow: hidden;
+  }
+}
 .main-news-container {
   display: flex;
   display: -webkit-box;
   min-width: 100%;
   overflow-x: auto;
   flex-wrap: nowrap;
+  margin-bottom: -15px;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -36,6 +41,5 @@
     min-width: auto;
     display: flex;
     overflow-x: visible;
-
   }
 }
