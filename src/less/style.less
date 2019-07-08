@@ -81,7 +81,18 @@
     }
   }
 }
+.cover-body {
 
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  background-color: #000;
+  z-index: 3;
+  transition: all .3s ease-in-out;
+  &.action-cover {
+    opacity: .6;  }
+}
 body {
   font-size: 14px;
   font-family: @font-gerbera;
@@ -183,6 +194,9 @@ a {
     .categ-arrow-up {
       width: 12px;
     }
+  }
+  .goods_card_first_title {
+    padding-left: 15px;
   }
 }
 .breadcrumbs-title {

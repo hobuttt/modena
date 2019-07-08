@@ -68,12 +68,14 @@ $(document).ready(function () {
 
   $('#hamburger').on('click', function () {
     $('.nav_collapse_pages').toggleClass('shower');
+    $('.cover-body').toggleClass('action-cover');
   });
   $('#close-nav').on('click', function () {
     $('.nav_collapse_pages').toggleClass('shower');
     $('.nav_collapse_categ').removeClass('shower');
     $('.back-arrow').removeClass('d-block');
     $('#nav-catalog-link').toggleClass('shower-cover');
+    $('.cover-body').removeClass('action-cover');
   });
   $('#nav-catalog-link').on('click', function () {
     $('.nav_collapse_categ').toggleClass('shower');
@@ -98,6 +100,7 @@ $(document).ready(function () {
       $('.nav_collapse_pages').removeClass('shower');
       $('#nav-catalog-link').toggleClass('shower-cover');
       $('.back-arrow').removeClass('d-block');
+      $('.cover-body').removeClass('action-cover');
     }); // hammertime.on('swiperight', function (ev) {
     //   $('.nav_collapse_pages').addClass('shower');
     // });

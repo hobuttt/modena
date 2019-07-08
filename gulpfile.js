@@ -22,11 +22,6 @@ gulp.task('less', function () {
   return  gulp.src('src/less/**/*.less')
   .pipe(less())
   .pipe(autoprefixer())
-  // .pipe(order([
-  //   'src/less/style.less',
-  //   'src/less/footer.less',
-  //   'src/less/main/*.less'
-  // ]))
   .pipe(concat('style.css'))
   .pipe(minifyCSS({compatibility: 'ie8'}))
   .pipe(gulp.dest('css'))
